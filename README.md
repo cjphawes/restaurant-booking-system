@@ -1,11 +1,16 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Welcome Fellow Coders!
 
-Welcome USER_NAME,
+## User Stories
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
-
+- As a **user**, I can **reserve a time slot** so that **I can eat at the restaurant**.
+- As a **user**, I can **navigate the website easily** so that **I am able to tell if I like the look of wanting to eat there**.
+- As a **user**, I am able to **send a cancellation for a reservation** so that **my reservations can be removed**.
+- As a **user**, I can **get answers to any questions or query's I may have** so that **I can make a better decision whether I want to visit the restaurant**.
+- As a **user**, I can **register an account with the restaurant** so that **my details are saved for ease of reservations the next time I intend to visit**.
+- As a **user**,  I am able to **change the preferred language of the website** so that **I am able to go through the website and understand it in my own language**.
+- As a **user**, I can **view the menu before attending** so that **I can decide whether I would like the food**.
+- As a **user**, I am able to **review and comment on the restaurant** so that **I can influence other potential customers**.
+- As a **user**, I am able to **sign-up to the restaurants newsletter** so that **I can receive information about promotions or any news/events**
 ## Gitpod Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
