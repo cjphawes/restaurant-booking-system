@@ -1,4 +1,6 @@
-Welcome Fellow Coders!
+Welcome Fellow Coders! 
+
+This is KUIDAORE. A luxury Japanese restaurant based Malibu, California.
 
 ## User Stories
 
@@ -12,6 +14,18 @@ Welcome Fellow Coders!
 - As a **user**, I am able to **review and comment on the restaurant** so that **I can influence other potential customers**.
 - As a **user**, I am able to **send a feedback form** so that **I give feedback on what they could do to improve their website**.
 - As a **user**, I am able to **sign-up to the restaurants newsletter** so that **I can receive information about promotions or any news/events**
+
+
+## Project Wireframes
+
+![Wireframe of the landing page](/documentation/images/landing-page.webp)
+![Wireframe of the about page](/documentation/images/about-page.webp)
+![Wireframe of the menu page](/documentation/images/menu-page.webp)
+![Wireframe of the contact page](/documentation/images/contact-page.webp)
+![Wireframe of the feedback form pop-up](/documentation/images/feedback-form.webp)
+![Wireframe of the reservations page](/documentation/images/reservations%20page.webp)
+![Wireframe of the faqs page](/documentation/images/faq-page.webp)
+![Wireframe of the signup / login pop-up](/documentation/images/signup-or-login.webp)
 
 
 
