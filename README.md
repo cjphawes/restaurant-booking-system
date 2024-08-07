@@ -2,7 +2,7 @@ Welcome Fellow Coders!
 
 ## User Stories
 
-- As a **user**, I can **reserve a time slot** so that **I can eat at the restaurant**.
+- As a **user**, I can **reserve a time slot with the number of people** so that **I can eat at the restaurant alone or with others**.
 - As a **user**, I can **navigate the website easily** so that **I am able to tell if I like the look of wanting to eat there**.
 - As a **user**, I am able to **send a cancellation for a reservation** so that **my reservations can be removed**.
 - As a **user**, I can **get answers to any questions or query's I may have** so that **I can make a better decision whether I want to visit the restaurant**.
@@ -10,7 +10,11 @@ Welcome Fellow Coders!
 - As a **user**,  I am able to **change the preferred language of the website** so that **I am able to go through the website and understand it in my own language**.
 - As a **user**, I can **view the menu before attending** so that **I can decide whether I would like the food**.
 - As a **user**, I am able to **review and comment on the restaurant** so that **I can influence other potential customers**.
+- As a **user**, I am able to **send a feedback form** so that **I give feedback on what they could do to improve their website**.
 - As a **user**, I am able to **sign-up to the restaurants newsletter** so that **I can receive information about promotions or any news/events**
+
+
+
 ## Gitpod Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
