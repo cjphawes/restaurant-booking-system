@@ -18,7 +18,7 @@
 ![Wireframe of the feedback form pop-up](/documentation/images/feedback-form.webp)
 
 ### Reservations Page
-![Wireframe of the reservations page](/documentation/images/reservations%20page.webp)
+![Wireframe of the reservations page](/documentation/images/reservations-page.webp)
 
 ### FAQ's Page
 ![Wireframe of the faqs page](/documentation/images/faq-page.webp)
