@@ -1,6 +1,6 @@
 Welcome Fellow Coders! 
 
-This is KUIDAORE. A luxury Japanese restaurant based Malibu, California.
+This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California.
 
 ## User Stories
 
