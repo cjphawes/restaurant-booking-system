@@ -11,28 +11,21 @@ class Customer(models.Model):
     phone_number = models.CharField(max_length=15)
 
 
-def __str__(self):
-    return f"{self.first_name} and {self.last_name} is a customer"
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
 
 
 class Reservation(models.Model):
     reservation_id = models.AutoField(primary_key=True)
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
-    table = models.ForeignKey('Table', on_delete=models.CASCADE, related_name="reservations")
     reservation_time = models.TimeField()
     reservation_date = models.DateField()
-    number_of_guests = models.IntegerField()
+    number_of_guests = models.IntegerField(default=1)
 
 
-def __str__(self):
-    return f"{self.customer} reserved {self.table} at {self.reservation_time} on {self.reservation_date}"
+    class Meta:
+        ordering = ["-reservation_id"]
 
 
-class Table(models.Model):
-    table_id = models.AutoField(primary_key=True)
-    reservation = models.ForeignKey(Reservation, on_delete=models.CASCADE, related_name= "tablessss")
-    table_number = models.IntegerField(unique=True)
-
-
-def __str__(self):
-    return f"{self.reservation} reserved {self.table_id} which is {self.table_number}"
+    def __str__(self):
+        return f"Reservation for {self.number_of_guests} at {self.reservation_time} on {self.reservation_date} for {self.customer}"
