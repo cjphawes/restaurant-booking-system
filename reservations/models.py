@@ -1,9 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 # Create your models here.
 class Customer(models.Model):
-    customer_id = models.AutoField(primary_key=True)
     full_name = models.CharField(max_length=100)
     email_address = models.EmailField(unique=True)
     phone_number = models.CharField(max_length=15)
@@ -15,16 +15,30 @@ class Customer(models.Model):
         return f"{self.full_name}"
 
 
-class Reservation(models.Model):
-    reservation_id = models.AutoField(primary_key=True)
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name="client_name")
-    reservation_time = models.TimeField()
-    reservation_date = models.DateField()
-    number_of_guests = models.IntegerField(default=1)
+TIME_PERIODS = (
+    (0, '17:00'),
+    (1, '17:30'),
+    (2, '18:00'),
+    (3, '18:30'),
+    (4, '19:00'),
+    (5, '19:30'),
+    (6, '20:00'),
+    (7, '20:30'),
+    (8, '21:00'),
+    (9, '21:30'),
+    (10, '22:00'),
+    (11, '22:30'),
+    (12, '23:00'),
+)
 
+class Reservation(models.Model):
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name="client_name")
+    reservation_time = models.IntegerField(choices=TIME_PERIODS, default=0)
+    reservation_date = models.DateField()
+    number_of_guests = models.PositiveIntegerField(default=1, validators=[MinValueValidator(1), MaxValueValidator(20)])
 
     class Meta:
-        ordering = ["-reservation_id"]
+        ordering = ["reservation_date"]
 
     """
     Function to display the parameters in the admin panel for a Reservation
