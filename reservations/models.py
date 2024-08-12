@@ -12,7 +12,7 @@ class Customer(models.Model):
 
 
 def __str__(self):
-    return self.customer_id
+    return f"{self.first_name} and {self.last_name} is a customer"
 
 
 class Reservation(models.Model):
@@ -21,18 +21,18 @@ class Reservation(models.Model):
     table = models.ForeignKey('Table', on_delete=models.CASCADE, related_name="reservations")
     reservation_time = models.TimeField()
     reservation_date = models.DateField()
-    num_of_guests = models.IntegerField()
+    number_of_guests = models.IntegerField()
 
 
 def __str__(self):
-    return self.reservation_id
+    return f"{self.customer} reserved {self.table} at {self.reservation_time} on {self.reservation_date}"
 
 
 class Table(models.Model):
     table_id = models.AutoField(primary_key=True)
-    reservation = models.ForeignKey(Reservation, on_delete=models.CASCADE, related_name= "tables")
+    reservation = models.ForeignKey(Reservation, on_delete=models.CASCADE, related_name= "tablessss")
     table_number = models.IntegerField(unique=True)
 
 
 def __str__(self):
-    return self.table_id
+    return f"{self.reservation} reserved {self.table_id} which is {self.table_number}"
