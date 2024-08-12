@@ -20,6 +20,8 @@ This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California.
 
 ## Current Problems Occurring
 - Want to allow admin users to search full_name.
+- How to add bs5 to project.
+- Add new erd image to readme
 
 ## Gitpod Reminders
 
