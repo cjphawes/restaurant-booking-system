@@ -5,19 +5,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Luxurious Sushi Restaurant, situated in Malibu, California">
+    <meta name="keywords" content="Luxury, Sushi, Japanese Restaurant, Malibu, California, Seafood">
+    <meta name="author" content="Cameron Hawes">
+    <title>Kuidaore | {% block title %}{% endblock %}</title>
+    <!-- Bootstrap 5 CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>Kuidaore | Luxury Sushi Dining, Malibu, California</title>
 </head>
 <body>
-    {% block header %}
-    <!-- Header places here -->
-    {% endblock header %}
+     <header>
+        <h2>this is my header</h2>
+     </header>
 
-    <h1>THIS IS MY BASE PAGE!</h1>
+    <h1>THIS IS MY BASE.HTML PAGE!</h1>
+    {% block content %}
+    {% endblock %}
 
-    {% block footer %}
-    <!-- Footer places here -->
-    {% endblock footer %}
+     <footer>
+        <h2>this is my footer</h2>
+     </footer>
+     <!-- Bootstrap 5 JS Script -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
