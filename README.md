@@ -18,6 +18,9 @@ This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California.
 ### [Take me to the Project Wireframes](/WIREFRAMES.md)
 
 
+## Current Problems Occurring
+- Want to allow admin users to search full_name.
+
 ## Gitpod Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
