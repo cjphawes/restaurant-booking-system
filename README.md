@@ -22,6 +22,7 @@ This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California.
 - How to add bs5 to project.
 - How to add my favicon to the browser tab.
 - Add new erd image to readme
+- Remove active state on buttons in index.html
 
 ## To do list
 
