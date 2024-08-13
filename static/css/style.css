@@ -1,12 +1,29 @@
-.jacques-francois-regular {
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Jacques+Francois+Shadow&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: "Jacques Francois", serif;
     font-weight: 400;
     font-style: normal;
-  }
+    background-color: #000;
+    color: #fff;
+}
 
-  #jacques-francois-shadow-regular {
+#jacques-francois-shadow-regular {
     font-family: "Jacques Francois Shadow", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
+.navbar-text-size {
+    font-size: 1.3em;
+}
+
+.title-text-size {
+    font-size: 1.5em;
+}
