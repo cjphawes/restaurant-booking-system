@@ -48,6 +48,12 @@ body {
     margin-bottom: 3rem;
 }
 
+hr {
+    margin: 4rem 35rem;
+    color: #fff;
+    opacity: 0.5;
+}
+
 /* HEADER & FOOTER STYLING */
 .jacques-francois-regular {
     font-family: "Jacques Francois", sans-serif;
