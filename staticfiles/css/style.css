@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* GENERAL ELEMENTS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #000;
+    color: #fff;    
+    padding: 0 3%;
+}
+
+.flex-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margin-btm {
+    margin-bottom: 10rem;
+}
+
+.margin-r {
+    margin-right: 1rem;
+}
+
+.margin-top {
+    margin-top: 2rem;
+}
+
+.row {
+    --bs-gutter-x: 20rem;
+    text-align: center;
+}
+
+.col {
+    padding: 0 4rem;
+}
+
+.h2-margin-btm,
+.p-margin-btm {
+    margin-bottom: 3rem;
+}
+
+/* HEADER & FOOTER STYLING */
+.jacques-francois-regular {
+    font-family: "Jacques Francois", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#jacques-francois-shadow-regular {
+    font-family: "Jacques Francois Shadow", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-style: normal;
+}
+
+.navbar-text-size {
+    font-size: 1.3em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255);
+}
+
+.title-text-size {
+    font-size: 1.5em;
+    letter-spacing: 0.4em;
+}
+
+footer {
+    margin-bottom: 2rem;
+}
+
+/** INDEX.HTML STYLING **/
+
+/* CAROUSEL STYLING */
+.carousel-item {
+    height: 85vh;
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 60%;
+    opacity: 0.8;
+    
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    height: 3rem;
+    width: 3rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 10%;
+    opacity: 1;
+}
+
+/* FORM (NEWSLETTER)*/
+#newsletter {
+    width: 25rem;
+}
+
+/* OTHER ELEMENTS */
+#restaurant-img {
+    height: 35rem;
+    width: 50rem;
+}
