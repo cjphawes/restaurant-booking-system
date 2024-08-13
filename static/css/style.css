@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Jacques+Francois+Shadow&display=swap');
 
+/* GENERAL ELEMENTS */
 *{
     padding: 0;
     margin: 0;
@@ -7,16 +8,33 @@
 }
 
 body {
-    font-family: "Jacques Francois", serif;
+    font-family: "Jacques Francois", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-color: #000;
-    color: #fff;
+    color: #fff;    
+    padding: 0 3%;
 }
 
+.flex-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margin-btm {
+    margin-bottom: 10rem;
+}
+
+.margin-r {
+    margin-right: 1rem;
+}
+
+/* HEADER & FOOTER STYLING */
 #jacques-francois-shadow-regular {
-    font-family: "Jacques Francois Shadow", serif;
+    font-family: "Jacques Francois Shadow", sans-serif;
     font-weight: 400;
+    font-size: 2em;
     font-style: normal;
 }
 
@@ -24,6 +42,40 @@ body {
     font-size: 1.3em;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255);
+}
+
 .title-text-size {
     font-size: 1.5em;
+    letter-spacing: 0.4em;
 }
+
+/** INDEX.HTML STYLING **/
+
+/* CAROUSEL STYLING */
+.carousel-item {
+    height: 85vh;
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    height: 3rem;
+    width: 3rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 10%;
+    opacity: 1;
+}
+
+/* OTHER ELEMENTS */
