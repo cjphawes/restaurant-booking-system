@@ -5,27 +5,37 @@
 
 {% block content %}
 <main>
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade margin-btm" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="../../../static/images/sushi-rolls-2.webp" class="d-block w-100 img-fluid" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="../../../static/images/sushi-dish.webp" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../static/images/sushi-nigiri.webp" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../static/images/sushi-rolls-1.webp" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../static/images/sushi-combo.webp" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../static/images/sushi-rolls-3.webp" class="d-block w-100 img-fluid" alt="...">
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
     </div>
 
-    <div class="container justify-content-center">
+    <div class="container justify-content-center margin-btm">
         <div class="row">
             <div class="col">
                 <h2>MENU</h2>
@@ -42,13 +52,19 @@
         </div>
     </div>
 
-    <img src="../../../documentation/images/landing-page.webp" class="img-fluid" alt="...">
-
-    <h3><span id="jacques-francois-shadow-regular">K</span>UIDAORE</h3>
+    <div class="flex-display">
+        <img src="../../../static/images/sushi-restaurant.webp" alt="image of the sushi restaurant" id="restaurant-img">
+        
+        <h3><span id="jacques-francois-shadow-regular">K</span>UIDAORE</h3>
+    </div>
 
     <div>
         <p></p>
-        <form action="POST"></form>
+        <form action="POST" class="flex-display">
+            <label for="newsletter">Enter Email for access to newsletter</label>
+            <input type="text" id="newsletter">
+
+        </form>
     </div>
 
 </main>
