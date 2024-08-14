@@ -13,7 +13,12 @@ body {
     font-style: normal;
     background-color: #000;
     color: #fff;    
-    padding: 0 3%;
+}
+
+main,
+header,
+footer {
+    margin: 0 4rem;
 }
 
 .flex-display {
@@ -22,6 +27,14 @@ body {
     align-items: center;
 }
 
+.empty-space {
+    height: 12rem;
+    width: 100%;
+}
+
+.center {
+
+}
 .margin-btm {
     margin-bottom: 10rem;
 }
@@ -34,22 +47,15 @@ body {
     margin-top: 2rem;
 }
 
-.row {
-    --bs-gutter-x: 20rem;
-    text-align: center;
-}
-
-.col {
-    padding: 0 4rem;
-}
-
 .h2-margin-btm,
 .p-margin-btm {
     margin-bottom: 3rem;
 }
 
 hr {
-    margin: 4rem 35rem;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     color: #fff;
     opacity: 0.5;
 }
@@ -113,7 +119,7 @@ footer {
 
 /* CAROUSEL STYLING */
 .carousel-item {
-    height: 85vh;
+    max-height: 65rem;
     position: relative;
 }
 
@@ -144,7 +150,9 @@ footer {
 }
 
 /* OTHER ELEMENTS */
-#restaurant-img {
-    height: 35rem;
-    width: 50rem;
+
+#restaurant-img-container img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
 }
