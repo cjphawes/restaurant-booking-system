@@ -13,26 +13,64 @@
         <div class="col">
             <h2 class="h2-margin-btm fs-1"><strong>RESERVATIONS</strong></h2>
             <p class="p-margin-btm">To guarantee your dining experience at Kuidaore, please make a reservation in advance. Secure your table by reserving below or calling us directly. If you register with us or log in before you make your reservation, you will receive priority booking availabilities. We look forward to welcoming you and providing a memorable meal.</p>
-            <button type="button" class="btn btn-light btn-lg"><strong>MAKE A RESERVATION</strong></button>            
+            <button type="button" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#reservationModal"><strong>MAKE A RESERVATION</strong></button>
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
+<div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content text-dark">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h1 class="modal-title fs-5 text-dark jacques-francois-regular" id="reservationModalLabel"><span class="jacques-francois-shadow-regular fs-2">K</span>UIDAORE</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body">
-                  ...
+                <h2 class="text-center fs-4 margin-top h2-margin-btm">WHEN DO YOU WANT TO COME?</h2>
+
+                <div class="form-floating">
+                    <select class="form-select" id="floatingNumOfGuests" aria-label="Floating label select number of guests">
+                        <option selected value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                    <label for="floatingSelectNumOfGuests">NUMBER OF GUESTS</label>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="reservation-date">DATE</label>
+                        <input type="date" id="reservation-date" class="form-control" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <label for="reservation-time">TIME</label>
+                        <input type="time" id="reservation-time" class="form-control" aria-label="Last name">
+                    </div>
+                </div>
+                
+                <p class="text-center margin-top">See below for cancellation policy, if required.</p>
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-dark">Confirm Reservation</button>
             </div>
         </div>
     </div>
