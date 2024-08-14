@@ -21,6 +21,7 @@ This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California.
 ## Current Problems Occurring
 - Add new erd image to readme
 - Remove active state on buttons in index.html
+- Formatting buttons on home page when changing screen size
 
 ## To do list
 
