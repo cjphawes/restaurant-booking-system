@@ -15,53 +15,76 @@
     <!-- Bootstrap 5 CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">    
     <title>Kuidaore | {% block title %}{% endblock %}</title>
 </head>
 <body>
   <header>
     <nav class="navbar navbar-text-size navbar-expand-lg navbar-dark">
-      <a class="navbar-brand title-text-size jacques-francois-regular" href="#"><span id="jacques-francois-shadow-regular">K</span>UIDAORE</a>
+      <a class="navbar-brand title-text-size jacques-francois-regular" href="{% url 'home' %}"><span id="jacques-francois-shadow-regular">K</span>UIDAORE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav fs-6">
-          <a class="nav-link margin-r" href="#">ABOUT</a>
-          <a class="nav-link margin-r" href="#">MENU</a>
-          <a class="nav-link margin-r" href="#">RESERVATIONS</a>
-          <a class="nav-link margin-r" href="#">FAQ</a>
-          <a class="nav-link margin-r" href="#">CONTACT</a>
-          <a class="nav-link" href="#">LOG IN</a>
+          <a class="nav-link margin-r" href="{% url 'about' %}">ABOUT</a>
+          <a class="nav-link margin-r" href="{% url 'menu' %}">MENU</a>
+          <a class="nav-link margin-r" href="{% url 'reservation' %}">RESERVATIONS</a>
+          <a class="nav-link margin-r" href="{% url 'faq' %}">FAQ</a>
+          <a class="nav-link margin-r" href="{% url 'contact' %}">CONTACT</a>
+          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>LOG IN</strong></button>        
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="KUIDAORE" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-dark jacques-francois-regular" id="exampleModalLabel"><span class="jacques-francois-shadow-regular fs-2">K</span>UIDAORE</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-dark">
+              <h2 class="text-center fs-4 margin-top">Would you like to...</h2>
+
+            <div class="flex-display">
+              {% if user.is_authenticated %}
+              <li class="nav-item btn fs-2">
+                <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+              </li>
+              {% else %}
+              <li class="nav-item btn fs-2">
+                <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                href="{% url 'account_signup' %}">Register</a>
+              </li>
+              <p>OR</p>
+              <li class="nav-item btn fs-2">
+                <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+              </li>
+              {% endif %}
+            </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
     </nav>     
   </header>
 
-  {% block content %}
-  {% endblock %}
-
-  {% if user.is_authenticated %}
-  <li class="nav-item">
-    <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
-  </li>
-  {% else %}
-  <li class="nav-item">
-    <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-      href="{% url 'account_signup' %}">Register</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
-  </li>
-  {% endif %}
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
   
   <footer class="flex-display navbar-text-size">    
     <h3 class="jacques-francois-regular"><span id="jacques-francois-shadow-regular">K</span>UIDAORE</h3>
-    <p class="margin-top jacques-francois-regular">&copy; 2024 KUIDAORE, all rights reserved</p>
+    <p class="margin-top jacques-francois-regular">&copy; 2024 kuidaore, all rights reserved</p>
   </footer>
     <!-- Bootstrap 5 JS Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
