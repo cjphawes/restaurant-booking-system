@@ -4,7 +4,7 @@
 {% block title %}Luxury Sushi Dining, Malibu, California{% endblock %}
 
 {% block content %}
-<div id="carouselExampleFade" class="carousel slide carousel-fade margin-btm" data-bs-ride="carousel">
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="../../../static/images/sushi-rice.webp" class="d-block w-100 img-fluid" alt="image of sushi wrapped in seaweed">
@@ -34,31 +34,41 @@
     </button>
 </div>
 
-<hr class="margin-btm">
+<div class="empty-space"></div>
 
-<div class="container justify-content-center margin-btm">
-    <div class="row">
+<hr>
+
+<div class="empty-space"></div>
+
+<div class="container-fluid">
+    <div class="row mx-auto gx-5 text-center">
         <div class="col">
-            <h2 class="h2-margin-btm"><strong>MENU</strong></h2>
-            <p class="p-margin-btm">Browse our signature dishes and Omakase options, including fresh sashimi and unique rolls.</p>
+            <h2 class="mb-5"><strong>MENU</strong></h2>
+            <p class="mb-5">Browse our signature dishes and Omakase options, including fresh sashimi and unique rolls.</p>
             <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'menu' %}"><strong>VIEW MENU</strong></a>
         </div>
         <div class="col">
-            <h2 class="h2-margin-btm"><strong>RESERVATIONS</strong></h2>
-            <p class="p-margin-btm">Reserve your table for an unforgettable sushi experience and exceptional service.</p>
+            <h2 class="mb-5"><strong>RESERVATIONS</strong></h2>
+            <p class="mb-5">Reserve your table. An unforgettable dining experience with exquisite sushi and exceptional service.</p>
             <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'reservation' %}"><strong>MAKE A RESERVATION</strong></a>
         </div>
         <div class="col">
-            <h2 class="h2-margin-btm"><strong>CONTACT</strong></h2>
-            <p class="p-margin-btm">Contact us for questions, or assistance. Our team is here to help ensure a wonderful experience.</p>
-            <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'contact' %}"><strong>CONTACT</strong></a>
+            <h2 class="mb-5"><strong>CONTACT</strong></h2>
+            <p class="mb-5">Contact us for questions, or assistance. Our team is here to help ensure a wonderful experience.</p>
+            <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'contact' %}"><strong>CONTACT US</strong></a>
         </div>
     </div>
 </div>
 
-<hr class="margin-btm">
+<div class="empty-space"></div>
 
-<div class="flex-display margin-btm" >
-    <img src="../../../static/images/sushi-restaurant.webp" alt="image of the sushi restaurant" id="restaurant-img"> 
+<hr>
+
+<div class="empty-space"></div>
+
+<div id="restaurant-img-container">
+    <img src="../../../static/images/sushi-restaurant.webp" class="d-block img-fluid mx-auto" alt="image of the sushi restaurant"> 
 </div>
+
+<div class="empty-space"></div>
 {% endblock %}
