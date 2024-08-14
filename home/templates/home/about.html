@@ -4,5 +4,12 @@
 {% block title %}About us{% endblock %}
 
 {% block content %}
-<p>This is my About page!</p>
+
+<h2>CHEF BEHIND THE ART</h2>
+<p>Chef Hiroshi Tanaka, a third-generation sushi master, has dedicated his life to perfecting the art of sushi. With training that began in his family's renowned sushi bar in a picturesque Japanese coastal town, he learned the secrets of traditional techniques and the importance of selecting the finest ingredients.. After years of perfecting his craft and earning accolades in Japan, Chef Hiroshi brings his expertise to Kuidaore, blending time-honoured methods with innovative flair. His meticulous attention to detail and passion for culinary excellence ensure that every dish from delicate sashimi to creative rolls, embodies his rich heritage and commitment to exceptional dining.</p>
+<div class="flex-display">
+    <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'reservation' %}"><strong>MAKE A RESERVATION</strong></a>
+    <img src="" alt="picture of Chef Hiroshi Tanaka">
+    <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'contact' %}"><strong>CONTACT US</strong></a>
+</div>
 {% endblock %}
