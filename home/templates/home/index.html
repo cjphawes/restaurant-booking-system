@@ -4,72 +4,61 @@
 {% block title %}Luxury Sushi Dining, Malibu, California{% endblock %}
 
 {% block content %}
-<main>
-    <div id="carouselExampleFade" class="carousel slide carousel-fade margin-btm" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../../../static/images/sushi-rice.webp" class="d-block w-100 img-fluid" alt="image of sushi wrapped in seaweed">
-            </div>
-            <div class="carousel-item">
-                    <img src="../../../static/images/sushi-nigiri.webp" class="d-block w-100 img-fluid" alt="image of nigiri sushi">
-            </div>
-            <div class="carousel-item">
-                <img src="../../../static/images/sushi-rolls-2.webp" class="d-block w-100 img-fluid" alt="image of a sushi roll">
-            </div>
-            <div class="carousel-item">
-                <img src="../../../static/images/sushi-platter.webp" class="d-block w-100 img-fluid" alt="image of multiple sushi on a plate">
-            </div>
-            <div class="carousel-item">
-                <img src="../../../static/images/sushi-dish.webp" class="d-block w-100 img-fluid" alt="image of a sushi dish">
-            </div>
-            <div class="carousel-item">
-                <img src="../../../static/images/sushi-rolls-1.webp" class="d-block w-100 img-fluid" alt="image of a sushi roll">
-            </div>
+<div id="carouselExampleFade" class="carousel slide carousel-fade margin-btm" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../../../static/images/sushi-rice.webp" class="d-block w-100 img-fluid" alt="image of sushi wrapped in seaweed">
         </div>
+        <div class="carousel-item">
+                <img src="../../../static/images/sushi-nigiri.webp" class="d-block w-100 img-fluid" alt="image of nigiri sushi">
+        </div>
+        <div class="carousel-item">
+            <img src="../../../static/images/sushi-rolls-2.webp" class="d-block w-100 img-fluid" alt="image of a sushi roll">
+        </div>
+        <div class="carousel-item">
+            <img src="../../../static/images/sushi-platter.webp" class="d-block w-100 img-fluid" alt="image of multiple sushi on a plate">
+        </div>
+        <div class="carousel-item">
+            <img src="../../../static/images/sushi-dish.webp" class="d-block w-100 img-fluid" alt="image of a sushi dish">
+        </div>
+        <div class="carousel-item">
+            <img src="../../../static/images/sushi-rolls-1.webp" class="d-block w-100 img-fluid" alt="image of a sushi roll">
+        </div>
+    </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
-    </div>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
 
-    <hr>
+<hr class="margin-btm">
 
-    <div class="container justify-content-center margin-btm">
-        <div class="row">
-            <div class="col">
-                <h2 class="h2-margin-btm"><strong>MENU</strong></h2>
-                <p class="p-margin-btm">Browse our signature dishes and Omakase options, including fresh sashimi and unique rolls.</p>
-                <button type="button" class="btn btn-light btn-lg"><strong>VIEW MENU</strong></button>            
-            </div>
-            <div class="col">
-                <h2 class="h2-margin-btm"><strong>RESERVATIONS</strong></h2>
-                <p class="p-margin-btm">Reserve your table for an unforgettable sushi experience and exceptional service.</p>
-                <button type="button" class="btn btn-light btn-lg"><strong>MAKE A RESERVATION</strong></button>            
-            </div>
-            <div class="col">
-                <h2 class="h2-margin-btm"><strong>CONTACT</strong></h2>
-                <p class="p-margin-btm">Contact us for questions, or assistance. Our team is here to help ensure a wonderful experience.</p>
-                <button type="button" class="btn btn-light btn-lg"><strong>CONTACT US</strong></button>            
-            </div>
+<div class="container justify-content-center margin-btm">
+    <div class="row">
+        <div class="col">
+            <h2 class="h2-margin-btm"><strong>MENU</strong></h2>
+            <p class="p-margin-btm">Browse our signature dishes and Omakase options, including fresh sashimi and unique rolls.</p>
+            <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'menu' %}"><strong>VIEW MENU</strong></a>
+        </div>
+        <div class="col">
+            <h2 class="h2-margin-btm"><strong>RESERVATIONS</strong></h2>
+            <p class="p-margin-btm">Reserve your table for an unforgettable sushi experience and exceptional service.</p>
+            <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'reservation' %}"><strong>MAKE A RESERVATION</strong></a>
+        </div>
+        <div class="col">
+            <h2 class="h2-margin-btm"><strong>CONTACT</strong></h2>
+            <p class="p-margin-btm">Contact us for questions, or assistance. Our team is here to help ensure a wonderful experience.</p>
+            <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'contact' %}"><strong>CONTACT</strong></a>
         </div>
     </div>
+</div>
 
-    <hr>
+<hr class="margin-btm">
 
-    <div class="flex-display margin-btm" >
-        <img src="../../../static/images/sushi-restaurant.webp" alt="image of the sushi restaurant" id="restaurant-img"> 
-    </div>
-    
-    <div>
-        <p></p>
-        <form action="POST" class="flex-display margin-btm">
-            <label for="newsletter">Enter email for access to newsletter</label>
-            <input type="text" id="newsletter" placeholder="cameronhawes@fakeemail.com">
-            
-        </form>
-    </div>
-</main>
+<div class="flex-display margin-btm" >
+    <img src="../../../static/images/sushi-restaurant.webp" alt="image of the sushi restaurant" id="restaurant-img"> 
+</div>
 {% endblock %}
