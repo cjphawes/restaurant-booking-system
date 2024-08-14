@@ -26,6 +26,9 @@ This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California.
 
 - Add Wireframes for mobile sizes.
 - Align modal title and buttons.
+- Form validation
+- Add sticky footer to html templates
+- Acquire more images for pages
 
 ## Gitpod Reminders
 
