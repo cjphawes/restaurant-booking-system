@@ -4,5 +4,47 @@
 {% block title %}Contact us{% endblock %}
 
 {% block content %}
-<p>This is my Contact page!</p>
+<h2>CONTACT</h2>
+<p>add icon for location here</p>
+<p>ADDRESS</p>
+<p>PHONE NUMBER</p>
+
+<hr class="margin-btm">
+
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#feedbackModal"><strong>FEEDBACK FORM</strong></button>
+
+<div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="KUIDAORE" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-dark jacques-francois-regular" id="feedbackModalLabel"><span class="jacques-francois-shadow-regular fs-2">K</span>UIDAORE</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body text-dark">
+                <h2 class="text-center fs-2 margin-top h2-margin-btm">Write a review</h2>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                    <label for="floatingEmail">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingName" placeholder="Name">
+                    <label for="floatingName">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingSubject" placeholder="Subject">
+                    <label for="floatingSubject">Subject</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="floatingFeedbacktext" style="height: 400px"></textarea>
+                    <label for="floatingFeedbackText"></label>
+                </div>
+
+            <div class="modal-footer sticky-bottom">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Send Feedback</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

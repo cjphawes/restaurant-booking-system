@@ -4,5 +4,69 @@
 {% block title %}Reservations{% endblock %}
 
 {% block content %}
-<p>This is my menu page!</p>
+<img src="" alt="picture of a platter of sushi">
+<h2>MENU</h2>
+<div>
+    <h3>APPETIZERS</h3>
+    <p>itm 1</p>
+    <p>itm 2</p>
+    <p>itm 3</p>
+</div>
+
+<div>
+    <h3>SIGNATURE ROLLS</h3>
+    <p>itm 1</p>
+    <p>itm 2</p>
+    <p>itm 2</p>
+</div>
+
+<div>
+    <h3>OMAKASE EXPERIENCE</h3>
+    <p>itm 1</p>
+    <p>itm 2</p>
+    <p>itm 3</p>
+</div>
+
+<div>
+    <h3>DESSERTS</h3>
+    <p>itm 1</p>
+    <p>itm 2</p>
+</div>
+
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#menuModal"><strong>WINE & SAKE</strong></button>
+
+<div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="KUIDAORE" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-dark jacques-francois-regular" id="menuModalLabel"><span class="jacques-francois-shadow-regular fs-2">K</span>UIDAORE</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body text-dark">
+        <h2 class="text-center margin-top h2-margin-btm">WINE & SAKE</h2>
+        <div class="flex-display h2-margin-btm">
+          <h3 class="h2-margin-btm fs-5">SPARKLING</h3>
+          <p>itm 1</p>
+          <p>itm 2</p>
+          <h3 class="h2-margin-btm fs-5">WHITE</h3>
+          <p>itm 1</p>
+          <p>itm 2</p>
+          <h3 class="h2-margin-btm fs-5">RED</h3>
+          <p>itm 1</p>
+          <p>itm 2</p>
+          <h3 class="h2-margin-btm fs-5">JUNMAI</h3>
+          <p>itm 1</p>
+          <p>itm 2</p>
+          <h3 class="h2-margin-btm fs-5">GINLO</h3>
+          <p>itm 1</p>
+          <p>itm 2</p>
+          <h3 class="h2-margin-btm fs-5">UNKNOWN</h3>
+          <p>itm 1</p>
+          <p>itm 2</p>
+        </div>          
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
