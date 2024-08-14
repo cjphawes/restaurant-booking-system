@@ -1,10 +1,14 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
 # Create your views here.
-def index_reservation(request):
-    return render(request, 'reservations/booking.html')
+class ReservationView(TemplateView):
+    template_name = 'reservations/booking.html'
 
 
-# class ReservationPage():
-#     queryset = 
-#     template_name = "reservations/booking.html"
+class ContactView(TemplateView):
+    template_name = 'reservations/contact.html'
+
+
+class MenuView(TemplateView):
+    template_name = 'reservations/menu.html'
