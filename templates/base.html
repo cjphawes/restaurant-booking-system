@@ -47,28 +47,29 @@
               <h1 class="modal-title fs-5 text-dark jacques-francois-regular" id="accountModalLabel"><span class="jacques-francois-shadow-regular fs-2">K</span>UIDAORE</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
             <div class="modal-body text-dark">
               <h2 class="text-center fs-4 margin-top">Would you like to...</h2>
 
-            <div class="flex-display">
-              {% if user.is_authenticated %}
-              <li class="nav-item btn fs-2">
-                <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
-              </li>
-              {% else %}
-              <li class="nav-item btn fs-2">
-                <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-                href="{% url 'account_signup' %}">Register</a>
-              </li>
-              <p>OR</p>
-              <li class="nav-item btn fs-2">
-                <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
-              </li>
-              {% endif %}
+              <div class="flex-display">
+                {% if user.is_authenticated %}
+                <li class="nav-item btn fs-2">
+                  <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item btn fs-2">
+                  <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                  href="{% url 'account_signup' %}">Register</a>
+                </li>
+                <p>OR</p>
+                <li class="nav-item btn fs-2">
+                  <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+                </li>
+                {% endif %}
+              </div>
             </div>
               
-            </div>
-            <div class="modal-footer sticky-bottom">
+            <div class="modal-footer mt-auto">
               <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
