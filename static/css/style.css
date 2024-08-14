@@ -54,6 +54,25 @@ hr {
     opacity: 0.5;
 }
 
+.btn-lg-individual {
+    padding: 2rem ;
+}
+
+/* GENERAL IMG STYLING */
+
+.header-img-container {
+    height: 40vh;
+    position: relative;
+}
+
+.header-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 60%;
+    opacity: 0.8;
+}
+
 /* HEADER & FOOTER STYLING */
 .jacques-francois-regular {
     font-family: "Jacques Francois", sans-serif;
@@ -83,6 +102,11 @@ hr {
 
 footer {
     margin-bottom: 2rem;
+}
+
+/* MODAL STYLING */
+.list-group-item {
+    border: none;
 }
 
 /** INDEX.HTML STYLING **/
