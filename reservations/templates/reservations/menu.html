@@ -4,66 +4,166 @@
 {% block title %}Reservations{% endblock %}
 
 {% block content %}
-<img src="" alt="picture of a platter of sushi">
-<h2>MENU</h2>
-<div>
-    <h3>APPETIZERS</h3>
-    <p>itm 1</p>
-    <p>itm 2</p>
-    <p>itm 3</p>
+<div class="menu-hero-container">
+  <img src="../../../static/images/sushi-rolls-3.webp" alt="picture of sushi rolls" id="menu-hero-img">
 </div>
 
-<div>
-    <h3>SIGNATURE ROLLS</h3>
-    <p>itm 1</p>
-    <p>itm 2</p>
-    <p>itm 2</p>
-</div>
+<article class="d-flex flex-column justify-content-center mt-5 text-center">
+  <h2 class="mt-5 fs-1">MENU</h2>
 
-<div>
-    <h3>OMAKASE EXPERIENCE</h3>
-    <p>itm 1</p>
-    <p>itm 2</p>
-    <p>itm 3</p>
-</div>
+  <div class="mt-5">
+    <h3 class="fs-4 mb-5">APPETIZERS</h3>
 
-<div>
-    <h3>DESSERTS</h3>
-    <p>itm 1</p>
-    <p>itm 2</p>
-</div>
+    <div>
+      <div class="mb-4">
+        <p class="mt-3 fs-6">Toro Tartare</p>
+        <p class="fs-6">Fresh fatty tuna, avocado and caviar with a touch of wasabi aioli</p>
+      </div>
+      <div class="mb-4">
+        <p class="mt-3 fs-6">Uni & Truffle</p>
+        <p class="fs-6">Sweet sea urchin topped with black truffle shavings on a bed of sushi rice</p>
+      </div>
+      <div class="mb-4">
+        <p class="mt-3 fs-6">Sashimi Flight</p>
+        <p class="fs-6">A selection of premium sashimi, including bluefin tuna, king salmon and yellowtail</p>
+      </div>
+    </div>
+  </div>
 
-<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#menuModal"><strong>WINE & SAKE</strong></button>
+  <div class="mt-5">
+    <h3 class="fs-4 mb-5">SIGNATURE ROLLS</h3>
+    <div class="mb-4">
+      <p class="mt-3 fs-6">Sakura Roll</p>
+      <p class="fs-6">Tuna, avocado, and cucumber, topped with cherry-blossom-infused crab, and a light yuzu sauce</p>
+    </div>
+    <div class="mb-4">
+      <p class="mt-3 fs-6">Golden Dragon Roll</p>
+      <p class="fs-6">Spicy shrimp tempura and eel, wrapped in rice and seaweed, drizzled with a honey soy glaze and gold leaf</p>
+    </div>
+    <div class="mb-4">
+      <p class="mt-3 fs-6">Luxe Rainbow Roll</p>
+      <p class="fs-6">A vibrant roll with layers of assorted sashimi, including toro, salmon, and scallops, with a delicate ponzu dressing</p>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <h3 class="fs-4 mb-5">OMAKASE EXPERIENCE</h3>
+    <div class="mb-4">
+      <p class="mt-3 fs-6">Chef's tasting Menu</p>
+      <p class="fs-6">A curated journey through Chef Hiroshi Nakamura's finest creations, featuring seasonal and market-fresh ingredients.</p>
+      <p class="fs-6">Includes a variety of sushi, sashimi, and innovative dishes tailored to your preferences</p>
+      <p class="fs-6">Specialty Nigiri</p>
+    <div class="mb-4">
+      <p class="mt-3 fs-6">A5 Wagyu Nigiri</p>
+      <p class="fs-6">Melt-in-your-mouth Japanese Wagyu beef, seared to perfection, with a touch of truffle salt</p>
+    </div>
+    <div class="mb-4">
+      <p class="mt-3 fs-6">Sweet Shrimp Nigiri</p>
+      <p class="fs-6">Sweet, tender shrimp with a hint of citrus and a delicate shiso leaf </p>
+    </div>
+  </div>
+    
+  <div class="mt-5">
+    <h3 class="fs-4 mb-5">DESSERTS</h3>
+    <div class="mb-4">
+      <p class="mt-3 fs-6">Matcha Cheesecake</p>
+      <p class="fs-6">Creamy matcha-infused cheesecake with a graham cracker crust and a raspberry coulis</p>
+    </div>
+    <div class="mb-4">
+      <p class="mt-3 fs-6">Yuzu Sorbet</p>
+      <p class="fs-6">Refreshing yuzu sorbet, garnished with mint and edible flowers</p>
+    </div>
+  </div>
+  
+  <div class="mb-5">
+    <button type="button" class="btn text-light btn-sm px-3 border-light border-3 mx-auto mb-5 my-5 fs-4" data-bs-toggle="modal" data-bs-target="#menuModal">WINE & SAKE</button>
+  </div>
+</article>
 
 <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="KUIDAORE" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5 text-dark jacques-francois-regular" id="menuModalLabel"><span class="jacques-francois-shadow-regular fs-2">K</span>UIDAORE</h1>
+        <h1 class="modal-title fs-5 text-dark jacques-francois-regular mx-auto" id="menuModalLabel"><span class="jacques-francois-shadow-regular fs-2">K</span>UIDAORE</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      
+      <div class="modal-body">
+          <article class="d-flex flex-column justify-content-center text-center text-dark">
+            <h2 class="fs-2">WINE & SAKE</h2>
+            
+            <div class="mt-5">
+              <h3 class="fs-4 mb-5">SPARKLING</h3>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Champagne Brut, Mo&#235;t & Chandon</p>
+                <p class="fs-6">A classic French Champagne with crisp acidity and notes of green apple and brioche</p>
+              </div>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Prosecco, La Marca</p>
+                <p class="fs-6">Light and refreshing with hints of pear, apple, and citrus</p>
+              </div>
+            </div>
 
-      <div class="modal-body text-dark">
-        <h2 class="text-center margin-top h2-margin-btm">WINE & SAKE</h2>
-        <div class="flex-display h2-margin-btm">
-          <h3 class="h2-margin-btm fs-5">SPARKLING</h3>
-          <p>itm 1</p>
-          <p>itm 2</p>
-          <h3 class="h2-margin-btm fs-5">WHITE</h3>
-          <p>itm 1</p>
-          <p>itm 2</p>
-          <h3 class="h2-margin-btm fs-5">RED</h3>
-          <p>itm 1</p>
-          <p>itm 2</p>
-          <h3 class="h2-margin-btm fs-5">JUNMAI</h3>
-          <p>itm 1</p>
-          <p>itm 2</p>
-          <h3 class="h2-margin-btm fs-5">GINLO</h3>
-          <p>itm 1</p>
-          <p>itm 2</p>
-          <h3 class="h2-margin-btm fs-5">UNKNOWN</h3>
-          <p>itm 1</p>
-          <p>itm 2</p>
+            <div class="mt-5">
+              <h3 class="fs-4 mb-5">WHITE</h3>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Sauvignon Blanc, Cloudy Bay</p>
+                <p class="fs-6">From New Zealand, offering bright acidity with flavors of lime, grapefruit, and gooseberry</p>
+              </div>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Chardonnay, Rombauer Vineyards</p>
+                <p class="fs-6">Rich and creamy with notes of ripe peach, vanilla, and toasted oak</p>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <h3 class="fs-4 mb-5">RED</h3>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Pinot Noir, Meiomi</p>
+                <p class="fs-6">California Pinot Noir with flavors of ripe berries, vanilla, and a hint of spice</p>
+              </div>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Cabernet Sauvignon, Caymus Vineyards</p>
+                <p class="fs-6">Bold and full-bodied with layers of dark fruit, chocolate, and espresso</p>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <h3 class="fs-4 mb-5">JUNMAI</h3>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Dassai 39 Junmai Daiginjo</p>
+                <p class="fs-6">A premium sake with delicate floral notes, refined sweetness, and a clean finish</p>
+              </div>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Hana Masamune Junmai</p>
+                <p class="fs-6">Smooth and well-balanced, with subtle notes of melon and a hint of earthy undertones</p>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <h3 class="fs-4 mb-5">GINJO</h3>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Juyondai Ginjo</p>
+                <p class="fs-6">Highly sought-after with a fragrant bouquet of fruit and a silky texture</p>
+              </div>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Kubota Manju Ginjo</p>
+                <p class="fs-6">Elegant and well-rounded, offering flavors of apple and pear with a long, smooth finish</p>
+              </div>
+            </div>
+
+            <div class="my-5">
+              <h3 class="fs-4 mb-5">DAIGINJO</h3>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Dewazakura "Oka" Daiginjo</p>
+                <p class="fs-6">A luxurious sake with complex flavors of ripe fruit, floral notes, and a silky mouthfeel</p>
+              </div>
+              <div class="mb-4">
+                <p class="mt-3 fs-6">Tedorigawa "Kinkon" Daiginjo</p>
+                <p class="fs-6">Rich and aromatic with a refined balance of sweetness and umami</p>
+              </div>
+            </div>
+          </article>
         </div>          
       </div>
     </div>
