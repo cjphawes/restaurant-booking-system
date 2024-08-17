@@ -4,12 +4,23 @@
 {% block title %}About us{% endblock %}
 
 {% block content %}
-
-<h2>CHEF BEHIND THE ART</h2>
-<p>Chef Hiroshi Tanaka, a third-generation sushi master, has dedicated his life to perfecting the art of sushi. With training that began in his family's renowned sushi bar in a picturesque Japanese coastal town, he learned the secrets of traditional techniques and the importance of selecting the finest ingredients.. After years of perfecting his craft and earning accolades in Japan, Chef Hiroshi brings his expertise to Kuidaore, blending time-honoured methods with innovative flair. His meticulous attention to detail and passion for culinary excellence ensure that every dish from delicate sashimi to creative rolls, embodies his rich heritage and commitment to exceptional dining.</p>
-<div class="flex-display">
-    <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'reservation' %}"><strong>MAKE A RESERVATION</strong></a>
-    <img src="" alt="picture of Chef Hiroshi Tanaka">
-    <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'contact' %}"><strong>CONTACT US</strong></a>
+<div class="about-hero-container">
+    <img src="../../../static/images/art-of-sushi-rolling.webp" id="about-hero-img" alt="sushi being made by rolling">
 </div>
+
+<article class="margin-btm">
+    <div class="d-flex flex-column justify-content-center mt-5 text-center">
+        <h2 class="mt-5 fs-1">CHEF BEHIND THE ART</h2>
+        <p class="mt-5">Chef Hiroshi Nakamura, a third-generation sushi master, has dedicated his life to perfecting the art of sushi. With training that began in his family's renowned sushi bar in a picturesque Japanese coastal town, he learned the secrets of traditional techniques and the importance of selecting the finest ingredients.. After years of perfecting his craft and earning accolades in Japan, Chef Hiroshi brings his expertise to Kuidaore, blending time-honoured methods with innovative flair. His meticulous attention to detail and passion for culinary excellence ensure that every dish from delicate sashimi to creative rolls, embodies his rich heritage and commitment to exceptional dining.</p>
+    </div>
+    <div class="d-flex mt-5 justify-content-center align-items-center mb-5">
+        <a class="nav-link btn btn-sm border-light border-3 text-light about-buttons" href="{% url 'reservation' %}"><strong>MAKE A RESERVATION</strong></a>
+
+        <div id="about-chef-container">
+            <img src="../../../static/images/chef-hiroshi-nakamura.webp" alt="portrait of Chef Hiroshi Nakamura" id="about-chef-img">
+        </div>
+        
+        <a class="nav-link btn btn-sm border-light border-3 text-light about-buttons" href="{% url 'contact' %}"><strong>CONTACT US</strong></a>
+    </div>
+</article>
 {% endblock %}
