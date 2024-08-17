@@ -34,8 +34,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["8000-cjphawes-restaurantbook-cq4yotm67zb.ws.codeinstitute-ide.net", '.herokuapp.com']
 
-
-# Application definition
+# Application definition;
 
 INSTALLED_APPS = [
     'django.contrib.admin',
