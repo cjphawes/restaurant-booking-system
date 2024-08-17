@@ -49,6 +49,10 @@ footer {
     margin-bottom: 3rem;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 hr {
     width: 40%;
     margin-left: auto;
@@ -90,6 +94,9 @@ hr {
     font-style: normal;
 }
 
+.nav-link {
+    padding: 0.5rem 0;
+}
 .navbar-text-size {
     font-size: 1.3em;
 }
@@ -112,20 +119,28 @@ footer {
     border: none;
 }
 
+.modal-header .btn-close {
+    margin: 0;
+    padding: 0;
+}
+
 /** INDEX.HTML STYLING **/
 
 /* CAROUSEL STYLING */
-.carousel-inner {
-    height: 80vh;
+
+.img-sushi-rice {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: 0% 50%;
 }
 
-.carousel-item img {
-    height: 50%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0% 60%;
-    opacity: 0.3;
-    
+#img-sushi-nigiri
+#img-sushi-rolls2
+#img-sushi-platter
+#img-sushi-dish
+#img-sushi-rolls1 {
+
 }
 
 .carousel-control-next-icon,
@@ -152,3 +167,48 @@ footer {
     height: auto;
     object-fit: cover;
 }
+
+/** ABOUT.HTML **/
+
+.about-buttons {
+    height: fit-content;
+    width: 30%;
+}
+
+.about-hero-container,
+.menu-hero-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+#menu-hero-img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 70%;
+}
+
+#about-hero-img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 90%;
+}
+
+#about-chef-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+#about-chef-img {
+    max-height: 100%;
+    width: 80%;
+    object-fit: cover;
+    align-self: center;   
+    object-position: 0% 100%; 
+}
+
