@@ -1,6 +1,10 @@
 from django.contrib import admin
+from django.contrib.sites.models import Site
+from allauth.socialaccount.models import SocialToken, SocialAccount, SocialApp
+from allauth.account.models import EmailAddress
 from .models import Customer, Reservation
 from django_summernote.admin import SummernoteModelAdmin
+from django_summernote.utils import get_attachment_model
 
 @admin.register(Reservation)
 class ReservationAdmin(SummernoteModelAdmin):  
@@ -14,3 +18,12 @@ class CustomerAdmin(SummernoteModelAdmin):
     list_display = ('full_name', 'email_address')
     search_fields = (['full_name'])
     list_filter = ('full_name',)
+
+
+# ADMIN PANELS THAT I WILL NOT NEED
+admin.site.unregister(Site)
+admin.site.unregister(SocialToken)
+admin.site.unregister(SocialAccount)
+admin.site.unregister(SocialApp)
+admin.site.unregister(EmailAddress)
+admin.site.unregister(get_attachment_model())
