@@ -31,6 +31,10 @@ This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California.
 - Add sticky footer to html templates
 - Acquire more images for pages
 
+## Things to mention
+- Added AllAuth however aren't usig sites and social accounts models.
+- Not using summernote attachments
+
 ## Gitpod Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
