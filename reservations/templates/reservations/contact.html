@@ -4,20 +4,32 @@
 {% block title %}Contact us{% endblock %}
 
 {% block content %}
-<h2>CONTACT</h2>
-<p>add icon for location here</p>
-<p>ADDRESS</p>
-<p>PHONE NUMBER</p>
+<div class="d-flex flex-column align-items-center mt-5">
+    <h2 class="mt-5 fs-1">CONTACT</h2>
+    <p class="mt-5">2837 Ocean Breeze Drive Malibu, CA 90265</p>
+    <a href="tel:+1 (310) 555-7289" class="text-light mt-2">+1 (310) 555-7289</a>
+</div>
 
-<hr class="margin-btm">
+<hr class="mt-5">
 
-<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#feedbackModal"><strong>FEEDBACK FORM</strong></button>
+<div class="d-flex flex-column align-items-center mt-5">
+    <h2 class="mt-5 fs-4">PARKING AVAILABILITY</h2>
+    <p class="mt-3 mb-5">Valet parking is available at the lot behind our restaurant.</p>
+</div>
+
+<hr class="mt-5">
+
+<div class="mt-5 d-flex align-items-center">
+    <button type="button" class="btn text-light btn-sm p-3 fs-5 border-light border-3 mt-5 mx-auto" data-bs-toggle="modal" data-bs-target="#feedbackModal"><strong>FEEDBACK FORM</strong></button>
+</div>
+
+<div class="empty-space"></div>
 
 <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="KUIDAORE" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5 text-dark jacques-francois-regular" id="feedbackModalLabel"><span class="jacques-francois-shadow-regular fs-2">K</span>UIDAORE</h1>
+                <h1 class="modal-title fs-5 text-dark jacques-francois-regular mx-auto" id="feedbackModalLabel"><span class="jacques-francois-shadow-regular fs-2">K</span>UIDAORE</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             
@@ -46,5 +58,4 @@
         </div>
     </div>
 </div>
-
 {% endblock %}
