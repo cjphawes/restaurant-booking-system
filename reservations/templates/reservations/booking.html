@@ -13,7 +13,7 @@
         <div class="col">
             <h2 class="mt-5 fs-1">RESERVATIONS</h2>
             <p class="p-margin-btm">To guarantee your dining experience at Kuidaore, please make a reservation in advance. Secure your table by reserving below or calling us directly. If you register with us or log in before you make your reservation, you will receive priority booking availabilities. We look forward to welcoming you and providing a memorable meal.</p>
-            <button type="button" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#reservationModal"><strong>MAKE A RESERVATION</strong></button>
+            <button type="button" class="btn btn-light btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#reservationModal"><strong>MAKE A RESERVATION</strong></button>
         </div>
     </div>
 </div>
@@ -29,10 +29,7 @@
             <div class="modal-body">
                 <form id="reservationForm" method="POST">
                     {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit" class="btn btn-dark">Confirm Reservation</button>
-                    <div id="form-success-message" class="alert alert-success mt-3" style="display: none;">Your reservation has been confirmed!</div>
-                    <!-- <h2 class="text-center fs-4 margin-top h2-margin-btm">WHEN DO YOU WANT TO COME?</h2>
+                    <h2 class="text-center fs-4 margin-top h2-margin-btm">WHEN DO YOU WANT TO COME?</h2>
                     
                     <div class="form-floating">
                         <select class="form-select" id="floatingNumOfGuests" aria-label="Floating label select number of guests">
@@ -65,17 +62,13 @@
                             <label for="reservation-date">DATE</label>
                             <input type="date" id="reservation-date" class="form-control" aria-label="First name">
                         </div>
-                        <div class="col">
+                        <div class="col mb-3">
                             <label for="reservation-time">TIME</label>
                             <input type="time" id="reservation-time" class="form-control" aria-label="Last name">
                         </div>
                     </div>
                     
-                    <p class="text-center margin-top">See below for cancellation policy, if required.</p>
-                </div>
-                
-                <div class="modal-footer"> -->
-                    <!-- </div> -->
+                    <button type="submit" class="btn btn-dark">Confirm Reservation</button>
                 </form>
             </div>
         </div>

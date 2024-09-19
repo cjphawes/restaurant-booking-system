@@ -36,7 +36,8 @@
             <div class="modal-body text-dark">
                 <h2 class="text-center fs-2 margin-top h2-margin-btm">Write a review</h2>
 
-                <form action="POST">
+                <form id="reviewForm" action="POST">
+                    {% csrf_token %}
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
                         <label for="floatingEmail">Email address</label>
