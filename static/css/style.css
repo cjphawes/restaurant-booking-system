@@ -168,6 +168,11 @@ footer {
     object-fit: cover;
 }
 
+.btn:focus, .btn-close:focus, .btn:active {
+    outline: none;
+    box-shadow: none;
+}
+
 /** ABOUT.HTML **/
 
 .about-buttons {
