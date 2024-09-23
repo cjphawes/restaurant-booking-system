@@ -1,6 +1,8 @@
 Welcome Fellow Coders! 
 
-This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California.
+This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California. It comprises of an online website with the ability to make reservations and providing user authentication.
+
+Take a look at my website KUIDAORE
 
 ## User Stories
 
@@ -20,19 +22,15 @@ This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California.
 
 ## Current Problems Occurring
 - Add new erd image to readme
-- Remove active state on buttons in index.html
 - Formatting buttons on home page when changing screen size
 
 ## To do list
 
-- Add Wireframes for mobile sizes.
-- Align modal title and buttons.
 - Form validation
 - Add sticky footer to html templates
-- Acquire more images for pages
 
 ## Things to mention
-- Added AllAuth however aren't usig sites and social accounts models.
+- Added AllAuth however aren't using sites and social accounts models.
 - Not using summernote attachments
 
 ## Gitpod Reminders
