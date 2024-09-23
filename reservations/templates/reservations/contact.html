@@ -36,25 +36,26 @@
             <div class="modal-body text-dark">
                 <h2 class="text-center fs-2 margin-top h2-margin-btm">Write a review</h2>
 
-                <form id="reviewForm" action="POST">
+                <form id="reviewForm" method="POST">
                     {% csrf_token %}
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                    {{ review_form.as_p }}
+                    <!-- <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" autocomplete="email" required>
                         <label for="floatingEmail">Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingName" placeholder="Name">
+                        <input type="text" class="form-control" id="floatingName" placeholder="Name" required>
                         <label for="floatingName">Name</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingSubject" placeholder="Subject">
+                        <input type="text" class="form-control" id="floatingSubject" placeholder="Subject" required>
                         <label for="floatingSubject">Subject</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" id="floatingFeedbacktext" style="height: 400px"></textarea>
-                        <label for="floatingFeedbackText"></label>
+                        <textarea class="form-control" id="floatingFeedbacktext" style="height: 200px" placeholder="Write your review here" required></textarea>
+                        <label for="floatingFeedbackText">Write your review here</label>
                     </div>
-                    
+                     -->
                     <button type="submit" class="btn btn-dark fs-5" data-bs-dismiss="modal"><strong>Send Feedback</strong></button>
                 </form>
             </div>
@@ -62,5 +63,14 @@
     </div>
 </div>
 
+
+
+<div class="alert alert-success alert-dismissible d-inline-flex fade show" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>    
+    <p>
+        Your review was successfully sent, Thank you!
+    </p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 
 {% endblock %}
