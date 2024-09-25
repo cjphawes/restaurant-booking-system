@@ -21,6 +21,6 @@ from .views import ReservationView, ContactView, MenuView, FeedbackFormView
 urlpatterns = [
     path("reservation/", ReservationView.as_view(), name="reservation"),
     path("contact/", ContactView.as_view(), name="contact"),
-    path('contact/', FeedbackFormView.as_view(), name='feedback'),
+    path('review_submission/', FeedbackFormView.as_view(), name='review'),
     path("menu/", MenuView.as_view(), name="menu"),
 ]
