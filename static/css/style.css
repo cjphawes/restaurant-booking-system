@@ -128,19 +128,11 @@ footer {
 
 /* CAROUSEL STYLING */
 
-/* .img-sushi-rice {
-    height: 100%;
-    width: auto;
+.carousel-image {
+    height: 80vh;
+    width: 100%;
     object-fit: cover;
-    object-position: 0% 50%;
-} */
-
-#img-sushi-nigiri
-#img-sushi-rolls2
-#img-sushi-platter
-#img-sushi-dish
-#img-sushi-rolls1 {
-
+    /* object-position: 0% 50%; */
 }
 
 .carousel-control-next-icon,
