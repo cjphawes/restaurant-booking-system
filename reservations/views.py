@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView, FormView
 from django.contrib import messages
-from .models import Review, Reservation, Customer, User
+from .models import Review, Reservation, User
 from .forms import ReviewForm
 
 # Create your views here.
 class ReservationView(TemplateView):
-    template_name = 'reservations/booking.html'
+    template_name = 'reservations/reservations.html'
 
 
 class ContactView(TemplateView):
