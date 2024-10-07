@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.sites.models import Site
 from allauth.socialaccount.models import SocialToken, SocialAccount, SocialApp
 from allauth.account.models import EmailAddress
-from .models import Customer, Reservation, Review
+from .models import Reservation, Review
 from django_summernote.admin import SummernoteModelAdmin
 from django_summernote.utils import get_attachment_model
 
@@ -11,13 +11,7 @@ class ReservationAdmin(SummernoteModelAdmin):
     list_display = ('customer', 'reservation_date', 'reservation_time')
     search_fields = (['customer__full_name__icontains', 'reservation_date'])
     list_filter = ('customer', 'reservation_date',)
-    
 
-@admin.register(Customer)
-class CustomerAdmin(SummernoteModelAdmin):  
-    list_display = ('full_name', 'email_address')
-    search_fields = (['full_name'])
-    list_filter = ('full_name',)
 
 
 @admin.register(Review)
