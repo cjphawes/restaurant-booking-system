@@ -2,6 +2,9 @@
 
 # Project Wireframes
 
+- The design is very similar with only a couple of minor changes from the original design such as:
+    - ds
+
 ## Web Wireframes
 
 #### Landing Page
