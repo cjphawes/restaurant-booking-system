@@ -34,6 +34,8 @@ Take a look at my website KUIDAORE
 - Added AllAuth however aren't using sites and social accounts models.
 - Not using summernote attachments
 
+### [ERD Diagram of Database Structure](/ERDDIAGRAM.md)
+
 ## Gitpod Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
