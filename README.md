@@ -21,13 +21,14 @@ Take a look at my website KUIDAORE
 
 
 ## Current Problems Occurring
-- Add new erd image to readme
 - Formatting buttons on home page when changing screen size
 
 ## To do list
-
 - Form validation
-- Add sticky footer to html templates
+- Add css for responsive design
+- Adding reservation and review forms
+- Sending email to user after submission
+- Remove carousel after breakpoint, into gallery
 
 ## Things to mention
 - Added AllAuth however aren't using sites and social accounts models.
