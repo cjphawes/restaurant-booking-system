@@ -13,13 +13,23 @@ body {
     font-style: normal;
     background-color: #000;
     color: #fff;    
-    padding: 0 3%;
+}
+
+main,
+header,
+footer {
+    padding: 0 5%;
 }
 
 .flex-display {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.empty-space {
+    height: 12rem;
+    width: 100%;
 }
 
 .margin-btm {
@@ -34,18 +44,40 @@ body {
     margin-top: 2rem;
 }
 
-.row {
-    --bs-gutter-x: 20rem;
-    text-align: center;
-}
-
-.col {
-    padding: 0 4rem;
-}
-
 .h2-margin-btm,
 .p-margin-btm {
     margin-bottom: 3rem;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+hr {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.btn-lg-individual {
+    padding: 2rem ;
+}
+
+/* GENERAL IMG STYLING */
+
+.header-img-container {
+    height: 40vh;
+    position: relative;
+}
+
+.header-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 60%;
+    opacity: 0.8;
 }
 
 /* HEADER & FOOTER STYLING */
@@ -62,6 +94,9 @@ body {
     font-style: normal;
 }
 
+.nav-link {
+    padding: 0.5rem 0;
+}
 .navbar-text-size {
     font-size: 1.3em;
 }
@@ -79,21 +114,25 @@ footer {
     margin-bottom: 2rem;
 }
 
+/* MODAL STYLING */
+.list-group-item {
+    border: none;
+}
+
+.modal-header .btn-close {
+    margin: 0;
+    padding: 0;
+}
+
 /** INDEX.HTML STYLING **/
 
 /* CAROUSEL STYLING */
-.carousel-item {
-    height: 85vh;
-    position: relative;
-}
 
-.carousel-item img {
-    height: 100%;
+.carousel-image {
+    height: 80vh;
     width: 100%;
     object-fit: cover;
-    object-position: 0% 60%;
-    opacity: 0.8;
-    
+    /* object-position: 0% 50%; */
 }
 
 .carousel-control-next-icon,
@@ -114,7 +153,59 @@ footer {
 }
 
 /* OTHER ELEMENTS */
-#restaurant-img {
-    height: 35rem;
-    width: 50rem;
+
+#restaurant-img-container img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
 }
+
+.btn:focus, .btn-close:focus, .btn:active {
+    outline: none;
+    box-shadow: none;
+}
+
+/** ABOUT.HTML **/
+
+.about-buttons {
+    height: fit-content;
+    width: 30%;
+}
+
+.about-hero-container,
+.menu-hero-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+#menu-hero-img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 70%;
+}
+
+#about-hero-img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 90%;
+}
+
+#about-chef-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+#about-chef-img {
+    max-height: 100%;
+    width: 80%;
+    object-fit: cover;
+    align-self: center;   
+    object-position: 0% 100%; 
+}
+
