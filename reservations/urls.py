@@ -1,22 +1,6 @@
-"""
-URL configuration for kuidaore project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path
-from .views import ReservationView, ContactView, MenuView, ReviewView, ReservationDetailsView, leave_review, make_reservation
+from .views import ReservationView, ContactView, MenuView, ReviewView, ReservationDetailsView, leave_review, make_reservation, RemoveReservationView, UpdateReservationView, list_reservations
 
 urlpatterns = [
     path("reservation/", ReservationView.as_view(), name="reservation"),
@@ -26,5 +10,8 @@ urlpatterns = [
     path("our_menu/", MenuView.as_view(), name="menu"),
     path("submit_review/", leave_review, name="submit_review"),
     path("make_reservation/", make_reservation, name="reservationForm"),
+    path("remove_reservation/", RemoveReservationView.as_view(), name="reservationRemove"),
+    path("update_reservation/", UpdateReservationView.as_view(), name="reservationUpdate"),
+    path("your_reservations/", list_reservations, name="reservationInfo"),
 
 ]
