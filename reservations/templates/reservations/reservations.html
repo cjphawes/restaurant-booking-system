@@ -15,11 +15,16 @@
             <p class="p-margin-btm mt-4">To guarantee your dining experience at Kuidaore, please make a reservation in advance. Secure your table by reserving below or calling us directly. If you register with us or log in before you make your reservation, you will receive priority booking availabilities. We look forward to welcoming you and providing a memorable meal.</p>
             
             <div class="d-flex flex-column align-items-center">
-                <button type="button" class="btn btn-light btn-lg mt-4 about-buttons" data-bs-toggle="modal" data-bs-target="#reservationModal"><strong>MAKE A RESERVATION</strong></button>
                 {% if user.is_authenticated %}
+                <button type="button" class="btn btn-light btn-lg mt-4 about-buttons" data-bs-toggle="modal" data-bs-target="#reservationModal"><strong>MAKE A RESERVATION</strong></button>
                 <a class="btn btn-sm border-info border-3 text-info about-buttons mt-3" href="{% url 'reservationDetails' %}"><strong>VIEW YOUR RESERVATIONS</strong></a>
                 {% else %}
-                <p class="text-secondary text-center mt-3">To view your reservations, please sign in</p>
+                <p class="text-secondary text-center mt-3">To make a reservation or view your reservations, please sign in</p>
+                <div class="d-flex mt-4">
+                    <a class="nav-link {% if request.path == signup_url %}active{% endif %} btn btn-light text-dark me-4 p-3" aria-current="page"
+                    href="{% url 'account_signup' %}"><strong>Register</strong></a>
+                    <a class="nav-link {% if request.path == login_url %}active{% endif %} btn btn-light text-dark ms-4 p-3" aria-current="page" href="{% url 'account_login' %}"><strong>Log In</strong></a>
+                  </div>
                 {% endif %}
             </div>
         </div>
@@ -41,7 +46,6 @@
                     {% for message in messages %}
                         {{ message }}
                     {% endfor %}
-                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 {% endif %}
                             
