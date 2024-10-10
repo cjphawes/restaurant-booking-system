@@ -13,11 +13,6 @@ class ReservationView(TemplateView):
 
 
 
-class ReservationDetailsView(TemplateView):
-    template_name = 'reservations/view_reservation.html'
-
-
-
 class RemoveReservationView(TemplateView):
     template_name = 'reservations/delete_reservation.html'
 
@@ -42,11 +37,10 @@ class ReviewView(TemplateView):
     template_name = 'reservations/review.html'
 
 
-
 @login_required
 def list_reservations(request):
-    reservations = Reservation.objects.all()
-    return render(request, 'reservations/view_reservations.html', {'reservations': reservations})
+    reservations = Reservation.objects.filter(customer=request.user)
+    return render(request, 'reservations/view_reservation.html', {'reservations': reservations})
 
 
 """
@@ -64,7 +58,7 @@ def leave_review(request):
             review = Review(reviewer_name=name, subject=subject, review_content=content)
 
             review.save()
-            messages.success(request, "Review submitted! Thank you for your feedback.")
+            messages.success(request, "Review submitted! Thank you for your feedback.", extra_tags="review")
 
         return render(request, "reservations/review.html", {'messages': messages.get_messages(request)})
 
@@ -92,7 +86,7 @@ def make_reservation(request):
             reservation = Reservation(customer=request.user, name=name, reservation_date=date, reservation_time=time_selected, number_of_guests=guests)
 
             reservation.save()
-            messages.success(request, "You're all set! We look forward to you joining us.")
+            messages.success(request, "You're all set! We look forward to you joining us.", extra_tags="reservation")
 
             client_email = reservation.customer.email
             print (f"{client_email}")
