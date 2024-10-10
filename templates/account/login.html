@@ -7,26 +7,28 @@
 
 {% block content %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <h3>{% trans "Sign In" %}</h3>
+<div class="container d-flex flex-column justify-content-center align-items-center">
+    <div class="mt-5">
+        <div>
+            <h3 class="mb-4 text-center">{% trans "Sign In" %}</h3>
 
-            <p>{% blocktrans %}Welcome back to the code|star blog. To leave a comment or like a post, please log in. If
-                you
-                have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
-                first.{% endblocktrans %}</p>
+            <p>{% blocktrans %}Welcome back to the Kuidaore. To leave a review, please log in.{% endblocktrans %}</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+    <div class="my-5 ">
+        <div class="">
             <form class="login" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
+
+                <div class="d-flex align-items-center my-5">
+                    <button class="btn btn-signup right btn-light me-3" type="submit"><strong>{% trans "Sign In" %}</strong></button>
+                    <span>OR</span>
+                    <a class="btn-light btn bg-primary btn-outline-primary text-dark ms-3" href="{{ signup_url }}"><strong>Sign-Up</strong></a>
+                </div>
             </form>
         </div>
     </div>
