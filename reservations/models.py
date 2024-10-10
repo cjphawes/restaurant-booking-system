@@ -23,7 +23,7 @@ TIME_PERIODS = (
 
 class Reservation(models.Model):
     customer = models.ForeignKey(User, on_delete=models.CASCADE, related_name="client_name")
-    email_address = models.EmailField(unique=True)
+    email_address = models.EmailField(unique=False)
     name = models.CharField(max_length=150)
     reservation_time = models.IntegerField(choices=TIME_PERIODS, default=0)
     reservation_date = models.DateField()
@@ -40,10 +40,9 @@ class Reservation(models.Model):
 
 
 class Review(models.Model):
-    reviewer_email = models.EmailField(unique=True)
     reviewer_name = models.CharField(max_length=150)
     subject = models.CharField(max_length=250)
-    review_date = models.DateField()
+    review_date = models.DateTimeField(auto_now_add=True)
     review_content = models.TextField()
 
     class Meta:
