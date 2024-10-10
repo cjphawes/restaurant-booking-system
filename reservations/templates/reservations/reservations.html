@@ -12,14 +12,22 @@
     <div class="row">
         <div class="col">
             <h2 class="mt-5 fs-1">RESERVATIONS</h2>
-            <p class="p-margin-btm">To guarantee your dining experience at Kuidaore, please make a reservation in advance. Secure your table by reserving below or calling us directly. If you register with us or log in before you make your reservation, you will receive priority booking availabilities. We look forward to welcoming you and providing a memorable meal.</p>
-            <button type="button" class="btn btn-light btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#reservationModal"><strong>MAKE A RESERVATION</strong></button>
+            <p class="p-margin-btm mt-4">To guarantee your dining experience at Kuidaore, please make a reservation in advance. Secure your table by reserving below or calling us directly. If you register with us or log in before you make your reservation, you will receive priority booking availabilities. We look forward to welcoming you and providing a memorable meal.</p>
+            
+            <div class="d-flex flex-column align-items-center">
+                <button type="button" class="btn btn-light btn-lg mt-4 about-buttons" data-bs-toggle="modal" data-bs-target="#reservationModal"><strong>MAKE A RESERVATION</strong></button>
+                {% if user.is_authenticated %}
+                <a class="btn btn-sm border-info border-3 text-info about-buttons mt-3" href="{% url 'reservationDetails' %}"><strong>VIEW YOUR RESERVATIONS</strong></a>
+                {% else %}
+                <p class="text-secondary text-center mt-3">To view your reservations, please sign in</p>
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>
 
 <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-dialog modal-md modal-dialog-centered">
         <div class="modal-content text-dark">
             <div class="modal-header">
                 <h1 class="modal-title fs-5 text-dark jacques-francois-regular mx-auto" id="reservationModalLabel"><span class="jacques-francois-shadow-regular fs-2">K</span>UIDAORE</h1>
@@ -27,13 +35,62 @@
             </div>
             
             <div class="modal-body">
-                <form id="reservationForm" method="POST">
+                {% if messages %}
+                <div class="alert alert-success alert-dismissable fade show d-flex align-items-center" role="alert">
+                    <i class="fa-regular fa-circle-check fa-2xl me-2"></i>
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endif %}
+                            
+                <form id="reservationForm" method="POST" action="{% url 'reservationForm' %}">
                     {% csrf_token %}
-                    <h2 class="text-center fs-4 margin-top h2-margin-btm">WHEN DO YOU WANT TO COME?</h2>
+                    <h2 class="text-center fs-5 my-4">WHEN DO YOU WANT TO COME?</h2>
                     
-                    <div class="form-floating">
-                        <select class="form-select" id="floatingNumOfGuests" aria-label="Floating label select number of guests">
-                            <option selected value="1">1</option>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingName" name="name" placeholder="Name" required>
+                        <label for="floatingName">Name</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingEmail" name="email" placeholder="Email" required>
+                        <label for="floatingEmail">Email Address</label>
+                    </div>                
+                    
+                    <div class="d-flex">
+                        <div class="pe-4 mb-4">
+                            <label for="reservation-time">Time</label>
+                            <select class="form-select" id="reservation-time" name="time" aria-label="Floating label select time">
+                                <option value="" disabled selected>Select a Time</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="reservation-time">Date</label>
+                            <input type="date" id="reservation-date" name="date" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="SelectNumOfGuests">Number Of Guests</label>
+                        <select class="form-select w-50" id="NumOfGuests" name="num_of_guests" aria-label="Select number of guests">
+                            <option value="" disabled selected>Select an Option</option>
+                            <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -43,32 +100,10 @@
                             <option value="8">8</option>
                             <option value="9">9</option>
                             <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
                         </select>
-                        <label for="floatingSelectNumOfGuests">NUMBER OF GUESTS</label>
-                    </div>
+                    </div>    
                     
-                    <div class="row">
-                        <div class="col">
-                            <label for="reservation-date">DATE</label>
-                            <input type="date" id="reservation-date" class="form-control" aria-label="First name">
-                        </div>
-                        <div class="col mb-3">
-                            <label for="reservation-time">TIME</label>
-                            <input type="time" id="reservation-time" class="form-control" aria-label="Last name">
-                        </div>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-dark">Confirm Reservation</button>
+                    <button type="submit" class="btn btn-dark my-3"><strong>Confirm Reservation</strong></button>
                 </form>
             </div>
         </div>

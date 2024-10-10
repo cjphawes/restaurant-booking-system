@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %} 
+
+{% block title %}Leave a Review{% endblock %}
+
+{% block content %}
+<form id="reviewForm" method="POST" class="mx-5 text-dark" action="{% url 'submit_review' %}">
+    {% csrf_token %}
+
+    {% if messages %}
+    <div class="alert alert-success alert-dismissable fade show d-flex align-items-center" role="alert">
+        <i class="fa-regular fa-circle-check fa-2xl me-2"></i>
+        {% for message in messages %}
+            {{ message }}
+        {% endfor %}
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}
+
+    <h3 class="text-center fs-3 my-5 text-light">Leave your review</h3>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingName" name="name" placeholder="Name" required>
+        <label for="floatingName">Name</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingSubject" name="subject" placeholder="Subject" required>
+        <label for="floatingSubject">Subject</label>
+    </div>
+    <div class="form-floating mb-3">
+        <textarea class="form-control" id="floatingFeedbackText" style="height: 200px" name="content" placeholder="Write your review here" required></textarea>
+        <label for="floatingFeedbackText">Write your review here</label>
+    </div>
+    <button type="submit" class="btn btn-secondary fs-5 mx-auto"><strong>Send Feedback</strong></button>
+</form>
+
+<div class="empty-space"></div>
+{% endblock %}
