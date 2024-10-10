@@ -2,32 +2,14 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
 
-# Create your models here.
-
-TIME_PERIODS = (
-    (0, '17:00'),
-    (1, '17:30'),
-    (2, '18:00'),
-    (3, '18:30'),
-    (4, '19:00'),
-    (5, '19:30'),
-    (6, '20:00'),
-    (7, '20:30'),
-    (8, '21:00'),
-    (9, '21:30'),
-    (10, '22:00'),
-    (11, '22:30'),
-    (12, '23:00'),
-)
-
 
 class Reservation(models.Model):
     customer = models.ForeignKey(User, on_delete=models.CASCADE, related_name="client_name")
-    email_address = models.EmailField(unique=False)
+    email_address = models.EmailField()
     name = models.CharField(max_length=150)
-    reservation_time = models.IntegerField(choices=TIME_PERIODS, default=0)
+    reservation_time = models.TimeField()
     reservation_date = models.DateField()
-    number_of_guests = models.PositiveIntegerField(default=1, validators=[MinValueValidator(1), MaxValueValidator(20)])
+    number_of_guests = models.PositiveIntegerField(default=1, validators=[MinValueValidator(1), MaxValueValidator(10)])
 
     class Meta:
         ordering = ["reservation_date"]
