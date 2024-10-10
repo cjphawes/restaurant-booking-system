@@ -15,8 +15,7 @@ Here is KUIADORE on different screen widths (INSERT IMAGE HERE & LINK)
 - As a **user**, I can **register an account with the restaurant** so that **my details are saved for ease of reservations the next time I intend to visit**.
 - As a **user**,  I am able to **change the preferred language of the website** so that **I am able to go through the website and understand it in my own language**.
 - As a **user**, I can **view the menu before attending** so that **I can decide whether I would like the food**.
-- As a **user**, I am able to **review and comment on the restaurant** so that **I can influence other potential customers**.
-- As a **user**, I am able to **send a feedback form** so that **I give feedback on what they could do to improve their website**.
+- As a **user**, I am able to **review and send a feedback form to the restaurant** so that **I can influence other potential customers, and improve their website or restaurant**.
 - As a **user**, I am able to **sign-up to the restaurants newsletter** so that **I can receive information about promotions or any news/events**
 
 ### [Take me to the Project Wireframes](/WIREFRAMES.md)
@@ -80,6 +79,7 @@ The FAQ page includes:
 - Options for logging in through Social accounts rather than just standard emails.
 - An additional contact form for general queries.
 - Better UI interaction with confirmations of reservations to emails as well as on screen prompts and confirmations of user actions.
+- Restaurant Newsletter Form, which will incorporate sending out emails with JS.
 
 ## Testing
 
@@ -96,7 +96,7 @@ The FAQ page includes:
   - Solution: 
 
 #### Unsolved Bugs
-- N/A Right now
+- When you log in and go to the Reservations Page it pops up a message of you signing in on the reservation booking modal.
 
 #### Mistakes 
 - Check Git Commits
