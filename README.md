@@ -2,7 +2,9 @@ Welcome Fellow Coders!
 
 This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California. It comprises of an online website with the ability to make reservations and providing user authentication.
 
-Take a look at my website KUIDAORE
+Take a look at my website KUIDAORE (INSERT LINK)
+
+Here is KUIADORE on different screen widths (INSERT IMAGE HERE & LINK)
 
 ## User Stories
 
@@ -19,6 +21,93 @@ Take a look at my website KUIDAORE
 
 ### [Take me to the Project Wireframes](/WIREFRAMES.md)
 
+---
+
+
+### Features
+
+#### Home Page
+(INSERT IMAGE)
+
+- The home page shows:
+  - The user what the website is about immediately.
+  - easy and simple ways to navigate the website.
+
+- The home page includes:
+  - A navigation bar with the ability to authenticate as a user and log in / log out freely.
+  - A timed rotation of images of the restaurants food
+  - Three links which are crucial to the websites functionality, that redirect the user to the respective webpages.
+
+#### About Page
+(INSERT IMAGE)
+- The About page includes:
+  - Some text describing the background of the restaurant.
+  - Image of the head Chef who made the restaurant famous.
+  - Two additional links for further ease of navigation for the user.
+
+#### Menu Page
+(INSERT IMAGE)
+
+- The Menu page includes:
+  - A detailed menu for the customers to preview
+  - A list of Wine & Sake options through the use of an additional modal element.
+
+#### Reservations Page
+(INSERT IMAGE)
+
+- The Reservations page includes:
+  - Some small text for the user about cancellations
+  - Depending on whether the user is logged in or not, will determine if they can view their already made reservations or not. Inside this area, they area able to also remove and update pre-existing reservations.
+  - A modal form which allows users to create a reservation for the restaurant.
+
+#### FAQ Page
+(INSERT IMAGE)
+
+The FAQ page includes:
+  - A list of FAQ's asked by the customers for better ease of understanding for future customers
+  - An additional link to the contact page in case they need to ask further questions.
+
+
+#### Contact Page
+(INSERT IMAGE)
+
+- The Contact page includes:
+  - Some key information about location and contact information.
+  - Depending on whether the user is logged in or not will determine if the user is allowed to submit a review form for the restaurant.
+
+
+#### Future Features to Implement
+- Options for logging in through Social accounts rather than just standard emails.
+- An additional contact form for general queries.
+- Better UI interaction with confirmations of reservations to emails as well as on screen prompts and confirmations of user actions.
+
+## Testing
+
+### [Please refer to the Testing Documentation](/TESTING.md)
+
+#### Solved Bugs
+- Issue 1:
+  - Solution: 
+- Issue 2:
+  - Solution: 
+- Issue 3:
+  - Solution: 
+- Issue 4:
+  - Solution: 
+
+#### Unsolved Bugs
+- N/A Right now
+
+#### Mistakes 
+- Check Git Commits
+
+## Deployment
+
+To deploy this project I used Heroku.
+
+### Credits
+- Content
+- Media
 
 ## Current Problems Occurring
 - Formatting buttons on home page when changing screen size
