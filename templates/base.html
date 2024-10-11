@@ -38,7 +38,7 @@
           <a class="nav-link margin-r" href="{% url 'faq' %}">FAQ</a>
           <a class="nav-link margin-r" href="{% url 'contact' %}">CONTACT</a>
           {% if user.is_authenticated %}
-          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#accountModal"><strong>LOG OUT</strong></button>        
+          <button type="button" class="btn btn-secondary btn-text-light-hover text-dark" data-bs-toggle="modal" data-bs-target="#accountModal"><strong>LOG OUT</strong></button>        
           {% else %}
           <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#accountModal"><strong>LOG IN</strong></button>        
           {% endif %}
@@ -72,11 +72,20 @@
                 </li>
                 {% endif %}
               </div>
+
             </div>
           </div>
         </div>
       </div>
-    </nav>     
+    </nav>
+    
+    {% for message in messages %}
+      <div class="alert alert-success fixed-bottom w-25 alert-dismissable fade show d-flex align-items-center" role="alert">
+        <i class="fa-regular fa-circle-check fa-2xl me-3"></i>
+          {{ message | safe }}
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>         
+      </div>
+    {% endfor %}
   </header>
 
   <main>
