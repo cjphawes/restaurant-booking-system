@@ -10,9 +10,9 @@
 <div class="container d-flex flex-column justify-content-center align-items-center">
     <div class="mt-5">
         <div>
-            <h3 class="mb-4 text-center">{% trans "Sign In" %}</h3>
+            <h3 class="mb-4 text-center text-decoration-underline">{% trans "Sign In" %}</h3>
 
-            <p>{% blocktrans %}Welcome back to the Kuidaore. To leave a review, please log in.{% endblocktrans %}</p>
+            <p>{% blocktrans %}Welcome back to Kuidaore.{% endblocktrans %}</p>
         </div>
     </div>
     <div class="my-5 ">
@@ -27,7 +27,7 @@
                 <div class="d-flex align-items-center my-5">
                     <button class="btn btn-signup right btn-light me-3" type="submit"><strong>{% trans "Sign In" %}</strong></button>
                     <span>OR</span>
-                    <a class="btn-light btn bg-primary btn-outline-primary text-dark ms-3" href="{{ signup_url }}"><strong>Sign-Up</strong></a>
+                    <a class="btn text-dark bg-secondary ms-3" href="{{ signup_url }}"><strong>Sign-Up</strong></a>
                 </div>
             </form>
         </div>

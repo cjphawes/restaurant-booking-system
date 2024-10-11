@@ -7,7 +7,7 @@
 {% block content %}
 <div class="d-flex flex-column align-items-center">
 
-  <h1 class="my-5 fs-2">{% trans "Sign Up" %}</h1>
+  <h1 class="my-5 fs-2 text-decoration-underline">{% trans "Sign Up" %}</h1>
   
   <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
     {% csrf_token %}
@@ -17,7 +17,7 @@
     {% endif %}
     <div class="d-flex align-items-center my-5 ">
       <button class="btn btn-signup right btn-light me-5" type="submit"><strong>{% trans "Sign Up" %}</strong></button>
-      <p class="ms-5">{% blocktrans %}Already have an account?<a class="btn bg-primary text-dark ms-3" href="{{ login_url }}"><strong>Sign In</strong></a>{% endblocktrans %}</p>
+      <p class="ms-5">{% blocktrans %}Already have an account?<a class="btn bg-secondary text-dark ms-3" href="{{ login_url }}"><strong>Sign In</strong></a>{% endblocktrans %}</p>
     </div>
   </form>
 </div>
