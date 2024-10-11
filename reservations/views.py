@@ -1,8 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.views.generic import TemplateView, FormView
 from django.views import View
 from django.contrib import messages
+from django.urls import reverse
 from .models import Review, Reservation, User
 from datetime import datetime
 
@@ -15,11 +16,6 @@ class ReservationView(TemplateView):
 
 class RemoveReservationView(TemplateView):
     template_name = 'reservations/delete_reservation.html'
-
-
-
-class UpdateReservationView(TemplateView):
-    template_name = 'reservations/update_reservation.html'
 
 
 
@@ -36,11 +32,45 @@ class MenuView(TemplateView):
 class ReviewView(TemplateView):
     template_name = 'reservations/review.html'
 
-
+"""
+Function display all of the users reservations made
+"""
 @login_required
 def list_reservations(request):
     reservations = Reservation.objects.filter(customer=request.user)
     return render(request, 'reservations/view_reservation.html', {'reservations': reservations})
+
+"""
+Function to allow user to update their reservation
+"""
+def update_reservation(request, reservation_id):
+    reservation = get_object_or_404(Reservation, id=reservation_id)
+
+    if request.method == "POST":
+        reservation_date = request.POST.get("date")
+        reservation_time = request.POST.get("time")
+        number_of_guests = request.POST.get("num_of_guests")
+        reservation.save()
+
+        if not reservation_date or not reservation_time or not number_of_guests:
+            messages.error(request, "Please complete all fields.")
+        else:
+            """
+            The datetime module I used to convert the string time into an object which works with Django's TimeField.
+            """
+            time_selected = datetime.strptime(reservation_time, '%H:%M').time()
+
+            reservation.reservation_date = reservation_date
+            reservation.reservation_time = time_selected
+            reservation.number_of_guests = number_of_guests
+            reservation.save()
+
+            messages.success(request, "Reservation updated successfully!")
+
+            return redirect('reservationDetails')
+
+    return render(request, "reservations/update_reservation.html", {'reservation': reservation})
+
 
 
 """
@@ -58,7 +88,7 @@ def leave_review(request):
             review = Review(reviewer_name=name, subject=subject, review_content=content)
 
             review.save()
-            messages.success(request, "Review submitted! Thank you for your feedback.", extra_tags="review")
+            messages.success(request, "Review submitted! Thank you for your feedback.")
 
         return render(request, "reservations/review.html", {'messages': messages.get_messages(request)})
 
@@ -86,11 +116,9 @@ def make_reservation(request):
             reservation = Reservation(customer=request.user, name=name, reservation_date=date, reservation_time=time_selected, number_of_guests=guests)
 
             reservation.save()
-            messages.success(request, "You're all set! We look forward to you joining us.", extra_tags="reservation")
+            messages.success(request, "You're all set! We look forward to you joining us.")
 
             client_email = reservation.customer.email
-            print (f"{client_email}")
-
-        return render(request, "reservations/reservations.html", {'messages': messages.get_messages(request)})
+        return redirect('reservationDetails')
 
     return render(request, "reservations/reservations.html")
