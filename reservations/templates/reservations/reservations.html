@@ -17,13 +17,14 @@
             <div class="d-flex flex-column align-items-center">
                 {% if user.is_authenticated %}
                 <button type="button" class="btn btn-light btn-lg mt-4 about-buttons" data-bs-toggle="modal" data-bs-target="#reservationModal"><strong>MAKE A RESERVATION</strong></button>
-                <a class="btn btn-sm border-info border-3 text-info about-buttons mt-3" href="{% url 'reservationDetails' %}"><strong>VIEW YOUR RESERVATIONS</strong></a>
+                <a class="btn btn-sm border-secondary border-3 text-secondary about-buttons mt-3 w-25 px-2" href="{% url 'reservationDetails' %}"><strong>VIEW YOUR RESERVATIONS</strong></a>
                 {% else %}
-                <p class="text-secondary text-center mt-3">To make a reservation or view your reservations, please sign in</p>
-                <div class="d-flex mt-4">
-                    <a class="nav-link {% if request.path == signup_url %}active{% endif %} btn btn-light text-dark me-4 p-3" aria-current="page"
+                <p class="text-secondary text-center mt-5 fs-5">To make a reservation or view your reservations, please sign in</p>
+                <div class="d-flex mt-5 align-items-center">
+                    <a class="nav-link {% if request.path == signup_url %}active{% endif %} btn btn-lg btn-light text-dark me-5 px-4 py-3 fs-3" aria-current="page"
                     href="{% url 'account_signup' %}"><strong>Register</strong></a>
-                    <a class="nav-link {% if request.path == login_url %}active{% endif %} btn btn-light text-dark ms-4 p-3" aria-current="page" href="{% url 'account_login' %}"><strong>Log In</strong></a>
+                    <span class="text-light fs-4">OR</span>
+                    <a class="nav-link {% if request.path == login_url %}active{% endif %} btn btn-lg btn-light text-dark ms-5 px-4 py-3 fs-3" aria-current="page" href="{% url 'account_login' %}"><strong>Log In</strong></a>
                   </div>
                 {% endif %}
             </div>
@@ -39,16 +40,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             
-            <div class="modal-body">
-                {% if messages %}
-                <div class="alert alert-success alert-dismissable fade show d-flex align-items-center" role="alert">
-                    <i class="fa-regular fa-circle-check fa-2xl me-2"></i>
-                    {% for message in messages %}
-                        {{ message }}
-                    {% endfor %}
-                </div>
-                {% endif %}
-                            
+            <div class="modal-body">                            
                 <form id="reservationForm" method="POST" action="{% url 'reservationForm' %}">
                     {% csrf_token %}
                     <h2 class="text-center fs-5 my-4">WHEN DO YOU WANT TO COME?</h2>
