@@ -1,8 +1,40 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Delete your reservation{% endblock %}
+{% block title %}Delete your Cancellation{% endblock %}
 
 {% block content %}
+<h2 class="text-center fs-4 my-5 text-decoration-underline">Are you sure you want to cancel this reservation?</h2>
 
+<div class="d-flex justify-content-center align-items-center">
+    <i class="fa-solid fa-circle-exclamation fa-lg me-3 mt-3" style="color: #FFD43B;"></i>    
+    <table class="table table-sm text-light w-75">
+        <thead>
+            <tr>
+                <th scope="col">Reservation No.</th>
+                <th scope="col">Date of Reservation</th>
+                <th scope="col">Time of Reservation</th>
+                <th scope="col">Number of Guests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">{{ reservation.id }}</th>
+                <td>{{ reservation.reservation_date }}</td>
+                <td>{{ reservation.reservation_time }}</td>
+                <td>{{ reservation.number_of_guests }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="d-flex align-items-center justify-content-center mt-5">
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn text-light bg-black border-danger border-2 me-2"><strong>Cancel Reservation</strong></button>
+        <a class="btn text-secondary border-secondary border-2 ms-2" href="{% url 'reservationDetails' %}"><strong>Go Back</strong></a>
+    </form>
+</div>
+
+<div class="empty-space"></div>
 {% endblock %}
