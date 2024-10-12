@@ -30,7 +30,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["8000-cjphawes-restaurantbook-1qwx7mg5tv9.ws.codeinstitute-ide.net", '.herokuapp.com']
 
