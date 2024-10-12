@@ -24,7 +24,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-text-size navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand title-text-size jacques-francois-regular" href="{% url 'home' %}"><span id="jacques-francois-shadow-regular">K</span>UIDAORE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,15 +32,15 @@
 
       <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav fs-6">
-          <a class="nav-link margin-r" href="{% url 'about' %}">ABOUT</a>
-          <a class="nav-link margin-r" href="{% url 'menu' %}">MENU</a>
-          <a class="nav-link margin-r" href="{% url 'reservation' %}">RESERVATIONS</a>
-          <a class="nav-link margin-r" href="{% url 'faq' %}">FAQ</a>
-          <a class="nav-link margin-r" href="{% url 'contact' %}">CONTACT</a>
+          <a class="nav-link" href="{% url 'menu' %}">MENU</a>
+          <a class="nav-link" href="{% url 'reservation' %}">RESERVATIONS</a>
+          <a class="nav-link" href="{% url 'about' %}">ABOUT</a>
+          <a class="nav-link" href="{% url 'faq' %}">FAQ</a>
+          <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
           {% if user.is_authenticated %}
-          <button type="button" class="btn btn-secondary btn-text-light-hover text-dark" data-bs-toggle="modal" data-bs-target="#accountModal"><strong>LOG OUT</strong></button>        
+          <button type="button" class="btn px-2" data-bs-toggle="modal" data-bs-target="#accountModal"><span class="bg-secondary text-dark rounded p-1"><strong>LOG OUT</strong></span></button>        
           {% else %}
-          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#accountModal"><strong>LOG IN</strong></button>        
+          <button type="button" class="btn px-2" data-bs-toggle="modal" data-bs-target="#accountModal"><span class="bg-light p-1 rounded"><strong>LOG IN</strong></span></button>        
           {% endif %}
         </div>
       </div>
@@ -80,7 +80,7 @@
     </nav>
     
     {% for message in messages %}
-      <div class="alert alert-success fixed-bottom w-25 alert-dismissable fade show d-flex align-items-center" role="alert">
+      <div class="alert alert-light py-1 position-absolute top-0 end-0 w-25 alert-dismissable fade show d-flex align-items-center" role="alert">
         <i class="fa-regular fa-circle-check fa-2xl me-3"></i>
           {{ message | safe }}
         <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>         
