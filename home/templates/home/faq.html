@@ -4,7 +4,7 @@
 {% block title %}FAQ's{% endblock %}
 
 {% block content %}
-<h2>FAQ's</h2>
+<h2 class="text-center my-5 fs-1">FAQ's</h2>
 
 <div class="accordion accordion-flush text-dark" id="accordionFlushExample">
     <div class="accordion-item">
@@ -75,8 +75,11 @@
     </div>
 </div>
 
-<hr class="margin-btm">
+<hr class="w-50 my-5">
 
-<a class="nav-link btn btn-light btn-lg text-dark margin-btm" href="{% url 'contact' %}"><strong>CONTACT US</strong></a>
+<div class="d-flex justify-content-center mt-5">
+    <a class="nav-link btn btn-light btn-lg text-dark px-5" href="{% url 'contact' %}"><strong>CONTACT US</strong></a>
+</div>
 
+<div class="empty-space"></div>
 {% endblock %}
