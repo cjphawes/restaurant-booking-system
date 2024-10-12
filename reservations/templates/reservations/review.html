@@ -7,7 +7,7 @@
 {% block content %}
 <form id="reviewForm" method="POST" class="mx-5 text-dark" action="{% url 'submit_review' %}">
     {% csrf_token %}
-    <h3 class="text-center fs-3 my-5 text-light">Leave your review</h3>
+    <h3 class="text-center fs-3 my-5 text-light text-decoration-underline">Leave your review</h3>
     <div class="form-floating mb-3">
         <input type="text" class="form-control" id="floatingName" name="name" placeholder="Name" required>
         <label for="floatingName">Name</label>
@@ -20,7 +20,7 @@
         <textarea class="form-control" id="floatingFeedbackText" style="height: 200px" name="content" placeholder="Write your review here" required></textarea>
         <label for="floatingFeedbackText">Write your review here</label>
     </div>
-    <button type="submit" class="btn btn-secondary fs-5 mx-auto"><strong>Send Feedback</strong></button>
+    <button type="submit" class="btn btn-secondary text-dark fs-5 mx-auto"><strong>Send Feedback</strong></button>
 </form>
 
 <div class="empty-space"></div>
