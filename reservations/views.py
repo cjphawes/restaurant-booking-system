@@ -14,11 +14,6 @@ class ReservationView(TemplateView):
 
 
 
-class RemoveReservationView(TemplateView):
-    template_name = 'reservations/delete_reservation.html'
-
-
-
 class ContactView(TemplateView):
     template_name = 'reservations/contact.html'
 
@@ -32,6 +27,9 @@ class MenuView(TemplateView):
 class ReviewView(TemplateView):
     template_name = 'reservations/review.html'
 
+
+
+
 """
 Function display all of the users reservations made
 """
@@ -39,6 +37,9 @@ Function display all of the users reservations made
 def list_reservations(request):
     reservations = Reservation.objects.filter(customer=request.user)
     return render(request, 'reservations/view_reservation.html', {'reservations': reservations})
+
+
+
 
 """
 Function to allow user to update their reservation
@@ -70,6 +71,23 @@ def update_reservation(request, reservation_id):
             return redirect('reservationDetails')
 
     return render(request, "reservations/update_reservation.html", {'reservation': reservation})
+
+
+
+
+"""
+Function to delete existing reservations
+"""
+def remove_reservation(request, reservation_id):
+    reservation = get_object_or_404(Reservation, id=reservation_id)
+
+    if request.method == "POST":
+        reservation.delete()
+        messages.success(request, "Reservation successfully deleted!")
+
+        return redirect("reservationDetails")
+
+    return render(request, 'reservations/delete_reservation.html', {'reservation': reservation})
 
 
 
@@ -119,6 +137,6 @@ def make_reservation(request):
             messages.success(request, "You're all set! We look forward to you joining us.")
 
             client_email = reservation.customer.email
-        return redirect('reservationDetails')
+        return redirect('reservation')
 
     return render(request, "reservations/reservations.html")
