@@ -58,7 +58,7 @@
                     <div class="d-flex">
                         <div class="pe-4 mb-4">
                             <label for="reservation-time">Time</label>
-                            <select class="form-select" id="reservation-time" name="time" aria-label="Floating label select time">
+                            <select class="form-select" id="reservation-time" name="time" aria-label="Floating label select time" required>
                                 <option value="" disabled selected>Select a Time</option>
                                 <option value="17:00">17:00</option>
                                 <option value="17:30">17:30</option>
@@ -78,13 +78,13 @@
 
                         <div>
                             <label for="reservation-time">Date</label>
-                            <input type="date" id="reservation-date" name="date" class="form-control">
+                            <input type="date" id="reservation-date" name="date" class="form-control" required>
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="SelectNumOfGuests">Number Of Guests</label>
-                        <select class="form-select w-50" id="NumOfGuests" name="num_of_guests" aria-label="Select number of guests">
+                        <select class="form-select w-50" id="NumOfGuests" name="num_of_guests" aria-label="Select number of guests" required>
                             <option value="" disabled selected>Select an Option</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
