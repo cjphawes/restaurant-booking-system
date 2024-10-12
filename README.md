@@ -98,7 +98,7 @@ The FAQ page includes:
   - Solution: 
 
 #### Unsolved Bugs
-- When you log in and go to the Reservations Page it pops up a message of you signing in on the reservation booking modal.
+- I was unable to Style the AllAuth html templates for Sign-up, Sign-in & Sign-out forms.
 
 #### Mistakes 
 - Check Git Commits
