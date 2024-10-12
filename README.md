@@ -81,6 +81,7 @@ The FAQ page includes:
 - Better UI interaction with confirmations of reservations to emails as well as on screen prompts and confirmations of user actions.
 - Restaurant Newsletter Form, which will incorporate sending out emails with JS.
 - Add a button to automatically scroll back to the top of the page when users are viewing their reservations.
+- Amalgamate the Contact page into the About page.
 
 ## Testing
 
