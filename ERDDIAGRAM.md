@@ -2,4 +2,4 @@
 
 ## ERD Diagram
 
-![ERD diagram of database](/documentation/images/kuiadore-erd-diagram.webp)
+![ERD diagram of database](/documentation/images/kuidaore-erd-diagram.webp)
