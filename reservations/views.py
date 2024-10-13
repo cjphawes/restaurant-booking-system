@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.views.generic import TemplateView, FormView
-from django.views import View
+from django.views.generic import TemplateView
 from django.contrib import messages
 from django.urls import reverse
 from .models import Review, Reservation, User
@@ -24,12 +23,6 @@ class MenuView(TemplateView):
 
 
 
-class ReviewView(TemplateView):
-    template_name = 'reservations/review.html'
-
-
-
-
 """
 Function display all of the users reservations made
 """
@@ -37,7 +30,6 @@ Function display all of the users reservations made
 def list_reservations(request):
     reservations = Reservation.objects.filter(customer=request.user)
     return render(request, 'reservations/view_reservation.html', {'reservations': reservations})
-
 
 
 
@@ -108,7 +100,7 @@ def leave_review(request):
             review.save()
             messages.success(request, "Review submitted! Thank you for your feedback.")
 
-        return render(request, "reservations/review.html", {'messages': messages.get_messages(request)})
+        return redirect("contact")
 
     return render(request, "reservations/review.html")
 
