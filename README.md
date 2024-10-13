@@ -29,6 +29,8 @@ For this project users want to be able to:
 - Have the ability to change or delete their reservations whenever they want to.
 - Leave a review for the website
 
+---
+
 ## User Stories
 
 - As a **user**, I can **reserve a time slot with the number of people** so that **I can eat at the restaurant alone or with others**.
@@ -40,6 +42,8 @@ For this project users want to be able to:
 - As a **user**, I can **view the menu before attending** so that **I can decide whether I would like the food**.
 - As a **user**, I am able to **review and send a feedback form to the restaurant** so that **I can influence other potential customers, and improve their website or restaurant**.
 - As a **user**, I am able to **sign-up to the restaurants newsletter** so that **I can receive information about promotions or any news/events**
+
+---
 
 ## Wireframes
 
@@ -128,7 +132,7 @@ The FAQ page includes:
 
 ![contact-page-img-2](/documentation/images/contact-page-img-2.webp)
 
-#### Future Features to Implement
+### Future Features to Implement
 - Options for logging in through Social accounts rather than just standard emails.
 - An additional contact form for general queries.
 - Better UI interaction with confirmations of reservations to emails as well as on screen prompts and confirmations of user actions.
@@ -136,32 +140,65 @@ The FAQ page includes:
 - Add a button to automatically scroll back to the top of the page when users are viewing their reservations.
 - Amalgamate the Contact page into the About page.
 
+---
+
 ## Testing
 
-Please refer to the [Testing.md](/TESTING.md) for all test-related documentation.
+Please refer to the [TESTING.md](/TESTING.md) for all test-related documentation.
 
-## Bugs
+### Solved Bugs
+- **Issue 1**: When submitting a review, the user would not be redirected back to the correct page.
+  - _Solution_: I found it was to do with my function for submitting a review, I was not using `redirect()` but `render()` so the user staying on the same page.
+- **Issue 2**: When showing a display message it would not disappear but would rely on a user to close it, this is not what I wanted.
+  - _Solution_: I created a JS file solely for the function of alerts which made the messages fade away after 3 seconds.
+  
+  ```
+  window.onload = function() {
+    let alerts = document.querySelectorAll('.alert');
 
-#### Solved Bugs
-- Issue 1:
-  - Solution: 
-- Issue 2:
-  - Solution: 
-- Issue 3:
-  - Solution: 
-- Issue 4:
-  - Solution: 
+    if (alerts) {
+        alerts.forEach(alert => {
+            setTimeout(function() {
+                alert.classList.add("fade");
 
-#### Unsolved Bugs
+                setTimeout(function() {
+                    alert.remove();
+                }, 300);
+            }, 3000)
+        });
+      }
+    };
+  ```
+
+- **Issue 3**: When trying to display a message, the correct message would not display. e.g. a successful log in message after confirming a reservation.
+  - _Solution_: I originally had the messages for loop in the html template for each page. I instead moved this to the base.html template, which also further minified my code.
+
+### Unsolved Bugs
 - I was unable to Style the AllAuth html templates for Sign-up, Sign-in & Sign-out forms.
-- Couldn't disable dates from before current date.
+- Couldn't disable dates from before current date for user to not select.
+- When changing to a different screen width, the carousel images would not shrink proportionally.
 
-#### Mistakes 
-- Check Git Commits
+### Mistakes 
+There were seven mistakes while committing to Github.
+- **022d1c5** - "feat:remove template views & add func for update rbookings" _Supposed to be_: "feat:remove template views & add func for update bookings"
+- **e7a764c** - "add migrations" _Supposed to be_: "maint:add migrations"
+- **6372021** - "add js for form function" _Supposed to be_: "feat:add js for form function"
+- **aaa44d1** - "adjust bs5 classes added to html" _Supposed to be_: "feat:adjust bs5 classes added to html"
+- **0c74670** - "use bs5 to make footer sticky" _Supposed to be_: "feat:use bs5 to make footer sticky"
+- **3aa8e37** - "feat:add correct favion links & wire up html templates to navbar" _Supposed to be_: "feat:add correct favicon links & wire up html templates to navbar"
+- **4f013c5** - "style:add my o css classes for styling of navbar and title" _Supposed to be_: "style:add my own css classes for styling of navbar and title"
+
+---
 
 ## Deployment
 
-To deploy this project I used Heroku.
+Please refer to the [DEPLOYMENT.md](/DEPLOYMENT.md) for all test-related documentation.
+
+- The website was deployed on [Heroku](https://dashboard.heroku.com/apps)
+- The database used was from the Code Institute Postgres database.
+- Access [KUIDAORE](https://kuidaore-restaurant-3c1cdf981122.herokuapp.com/) here
+
+---
 
 ### Credits
 - Content
