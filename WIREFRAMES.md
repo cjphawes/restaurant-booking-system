@@ -1,6 +1,6 @@
 [&lt; Back to README file](/README.md)
 
-# Project Wireframes
+# Wireframes
 
 - The design is very similar with only a couple of minor changes from the original design such as:
     - Some wording has changed on buttons etc.
@@ -58,3 +58,5 @@
 
 #### Sign-up or Log in Pop-up
 ![Wireframe of the signup / login pop-up](/documentation/images/signup-or-login-mobile.webp)
+
+[&lt; Back to README file](/README.md)
