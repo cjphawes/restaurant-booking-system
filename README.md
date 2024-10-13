@@ -1,10 +1,33 @@
-Welcome Fellow Coders! 
+![Banner of the logo](/documentation/images/banner-of-website.webp)
+
+# KUIDAORE
+Hello Fellow Coders! 
 
 This is KUIDAORE. A luxury Japanese restaurant based in Malibu, California. It comprises of an online website with the ability to make reservations and providing user authentication.
 
-Take a look at my website KUIDAORE (INSERT LINK)
+The target audience are foodies who love sushi and high end restaurants.
 
-Here is KUIADORE on different screen widths (INSERT IMAGE HERE & LINK)
+Book your reservation now! [KUIDAORE](https://kuidaore-restaurant-3c1cdf981122.herokuapp.com/)
+
+![KUIDAORE on different device widths](/documentation/images/kuidaore-on-different-screen-widths.webp)
+
+Am I Responsive [Website](https://ui.dev/amiresponsive?url=https://8000-cjphawes-restaurantbook-1qwx7mg5tv9.ws.codeinstitute-ide.net/)
+
+---
+
+## Goals
+
+#### My Goals
+For this project I have aimed:
+- For users to be able to make a reservation with as little navigation as possible
+- For authenticated users to be able to provide feedback and review the website / restaurant.
+- To provide a high-end design and functional booking system tailored to registered users.
+
+#### External User Goals
+For this project users want to be able to:
+- Create a reservation with ease.
+- Have the ability to change or delete their reservations whenever they want to.
+- Leave a review for the website
 
 ## User Stories
 
@@ -18,46 +41,74 @@ Here is KUIADORE on different screen widths (INSERT IMAGE HERE & LINK)
 - As a **user**, I am able to **review and send a feedback form to the restaurant** so that **I can influence other potential customers, and improve their website or restaurant**.
 - As a **user**, I am able to **sign-up to the restaurants newsletter** so that **I can receive information about promotions or any news/events**
 
-### [Take me to the Project Wireframes](/WIREFRAMES.md)
+## Wireframes
 
----
+[Take me to the Project Wireframes](/WIREFRAMES.md)
 
+## ERD Model
 
-### Features
+[Take me to the Database Model](/ERDDIAGRAM.md)
 
-#### Home Page
-(INSERT IMAGE)
+## Features
+
+### Home Page
+![Landing page image](/documentation/images/landing-page-img-1.webp)
 
 - The home page shows:
   - The user what the website is about immediately.
-  - easy and simple ways to navigate the website.
+  - Easy and simple ways to navigate the website, displaying key buttons to where the user needs to go.
 
 - The home page includes:
   - A navigation bar with the ability to authenticate as a user and log in / log out freely.
-  - A timed rotation of images of the restaurants food
+  - A timed carousel of images of the restaurants food
   - Three links which are crucial to the websites functionality, that redirect the user to the respective webpages.
 
-#### About Page
-(INSERT IMAGE)
+![Landing page image](/documentation/images/landing-page-img-2.webp)
+
+### About Page
+![About page image](/documentation/images/about-page-img-1.webp)
 - The About page includes:
   - Some text describing the background of the restaurant.
   - Image of the head Chef who made the restaurant famous.
   - Two additional links for further ease of navigation for the user.
 
-#### Menu Page
-(INSERT IMAGE)
+### Menu Page
+![Menu page image](/documentation/images/menu-page-img-1.webp)
 
 - The Menu page includes:
   - A detailed menu for the customers to preview
   - A list of Wine & Sake options through the use of an additional modal element.
 
-#### Reservations Page
-(INSERT IMAGE)
+![Menu page image](/documentation/images/menu-page-img-2.webp)
+
+### Reservations Page
+![Reservation page image](/documentation/images/reservations-page-img-1.webp)
 
 - The Reservations page includes:
   - Some small text for the user about cancellations
   - Depending on whether the user is logged in or not, will determine if they can view their already made reservations or not. Inside this area, they area able to also remove and update pre-existing reservations.
   - A modal form which allows users to create a reservation for the restaurant.
+
+![Reservation page image](/documentation/images/reservations-page-img-2.webp)
+
+### Viewing Reservations Page
+![Viewing reservation page image](/documentation/images/view-reservations-img-1.webp)
+
+- The reservation view includes:
+  - All the reservations the user has created.
+  - Options to modify or cancel the reservation completely
+
+### Update Reservations Page
+![Update reservation page image](/documentation/images/update-reservation-img-1.webp)
+
+- The update reservation view includes:
+  - The ability to change the reservation parameters set by the user when initially making the reservation.
+
+### Delete Reservations Page
+![Delete reservation page image](/documentation/images/delete-reservation-img-1.webp)
+
+- The delete reservation view includes:
+  - The ability to completely remove the reservation from the users log.
 
 #### FAQ Page
 (INSERT IMAGE)
@@ -68,12 +119,14 @@ The FAQ page includes:
 
 
 #### Contact Page
-(INSERT IMAGE)
+![contact-page-img-1](/documentation/images/contact-page-img-1.webp)
 
 - The Contact page includes:
   - Some key information about location and contact information.
   - Depending on whether the user is logged in or not will determine if the user is allowed to submit a review form for the restaurant.
 
+
+![contact-page-img-2](/documentation/images/contact-page-img-2.webp)
 
 #### Future Features to Implement
 - Options for logging in through Social accounts rather than just standard emails.
@@ -85,7 +138,9 @@ The FAQ page includes:
 
 ## Testing
 
-### [Please refer to the Testing Documentation](/TESTING.md)
+Please refer to the [Testing.md](/TESTING.md) for all test-related documentation.
+
+## Bugs
 
 #### Solved Bugs
 - Issue 1:
@@ -99,6 +154,7 @@ The FAQ page includes:
 
 #### Unsolved Bugs
 - I was unable to Style the AllAuth html templates for Sign-up, Sign-in & Sign-out forms.
+- Couldn't disable dates from before current date.
 
 #### Mistakes 
 - Check Git Commits
@@ -116,16 +172,13 @@ To deploy this project I used Heroku.
 
 ## To do list
 - Add css for responsive design
-- Sending email to user after submission
 - Remove carousel after breakpoint, into gallery
 
 ## Things to mention
 - Added AllAuth however aren't using sites and social accounts models.
 - Not using summernote attachments
-- Couldn't disable dates from before current date.
 - Used Chat GPT for timing calculations for backend
 
-### [ERD Diagram of Database Structure](/ERDDIAGRAM.md)
 
 ## Gitpod Reminders
 
