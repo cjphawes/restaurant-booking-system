@@ -8,7 +8,7 @@ from django_summernote.utils import get_attachment_model
 
 @admin.register(Reservation)
 class ReservationAdmin(SummernoteModelAdmin):  
-    list_display = ('customer', 'reservation_date', 'reservation_time')
+    list_display = ('customer', 'reservation_date', 'reservation_time', 'number_of_guests')
     search_fields = (['customer__full_name__icontains', 'reservation_date'])
     list_filter = ('customer', 'reservation_date',)
 
