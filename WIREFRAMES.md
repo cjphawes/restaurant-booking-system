@@ -3,7 +3,8 @@
 # Project Wireframes
 
 - The design is very similar with only a couple of minor changes from the original design such as:
-    - ds
+    - Some wording has changed on buttons etc.
+    - The authentication modals are now html pages due to using Django's AllAuth package/
 
 ## Web Wireframes
 
