@@ -4,7 +4,8 @@
 
 - The design is very similar with only a couple of minor changes from the original design such as:
     - Some wording has changed on buttons etc.
-    - The authentication modals are now html pages due to using Django's AllAuth package/
+    - The authentication modals are now html pages due to using Django's AllAuth package
+    - The removal of links in the footer.
 
 ## Web Wireframes
 
