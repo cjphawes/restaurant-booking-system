@@ -15,7 +15,7 @@
 5. Create a Heroku account, if you haven;t already, click [Heroku sign-up](https://signup.heroku.com/?utm_source=google&utm_medium=paid_search&utm_campaign=emea_heraw&utm_content=general-branded-search-rsa&utm_term=heroku%20deploy&utm_source_platform=GoogleAds&gad_source=1&gclid=CjwKCAjw3624BhBAEiwAkxgTOnW3NMOV1WnmmRl3waphvbeJMziUKDW38F0Dy3uLfBJLsjNUm-vZdxoCp9MQAvD_BwE)
 6. Create a new application, from selecting **Create new app** from the dropdown. Follow the steps on the page and click **Create app**.
 
-INSERT VIDEO HERE DIRECTLY FROM GITHUB
+https://github.com/user-attachments/assets/71b252fb-d88d-4442-bff0-9785913fb9ce
 
 7. Navigate to the **Deploy** tab, opening up the Deploy section.
 ![Deploy tab on Heroku](/documentation/images/deploy-tab-heroku.webp)
