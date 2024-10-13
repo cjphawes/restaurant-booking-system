@@ -4,7 +4,7 @@
 {% block title %}Delete your Cancellation{% endblock %}
 
 {% block content %}
-<h2 class="text-center fs-4 my-5 text-decoration-underline">Are you sure you want to cancel this reservation?</h2>
+<h2 class="text-center fs-4 my-5 text-decoration-underline">Cancel this Reservation</h2>
 
 <div class="d-flex justify-content-center align-items-center">
     <i class="fa-solid fa-circle-exclamation fa-lg me-3 mt-3" style="color: #FFD43B;"></i>    
@@ -28,7 +28,9 @@
     </table>
 </div>
 
-<div class="d-flex align-items-center justify-content-center mt-5">
+<p class="mt-5 text-center text-warning">Are you sure you want to cancel this reservation? This is will be permanent!</p>
+
+<div class="d-flex align-items-center justify-content-center mt-3">
     <form method="POST">
         {% csrf_token %}
         <button type="submit" class="btn text-light bg-black border-danger border-2 me-2"><strong>Cancel Reservation</strong></button>
