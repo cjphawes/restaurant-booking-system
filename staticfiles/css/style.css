@@ -87,7 +87,7 @@ hr {
     font-style: normal;
 }
 
-#jacques-francois-shadow-regular {
+.jacques-francois-shadow-regular {
     font-family: "Jacques Francois Shadow", sans-serif;
     font-weight: 400;
     font-size: 1.5em;
@@ -147,11 +147,6 @@ footer {
     opacity: 1;
 }
 
-/* FORM (NEWSLETTER)*/
-#newsletter {
-    width: 25rem;
-}
-
 /* OTHER ELEMENTS */
 
 #restaurant-img-container img {
@@ -209,3 +204,84 @@ footer {
     object-position: 0% 100%; 
 }
 
+/* FAQ.HTML */
+.accordion-flush {
+    background-color: #000;
+}
+
+
+/* PSUEDO ELEMENTS */
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1100px) {
+    .mq-index-links-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mq-index-mt {
+        margin-top: 5rem;
+    }
+    .mq-reservation-links {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .mq-view-reservation-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .mq-view-reservation-width {
+        width: 90% !important;
+    }
+    .mq-view-reservation-buttons {
+        margin: 0 0 2rem 0 !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mq-about-links-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mq-about-links {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mq-contact-text-width {
+        margin: 0 2rem 0 2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mq-delete-reservation-icon {
+        display: none !important;
+    }
+    .mq-delete-reservation-width {
+        width: 90% !important;
+    }
+}
