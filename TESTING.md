@@ -64,28 +64,30 @@ No errors were found when passing it through the validator
 
 | Action | Testing | Result | Evidence |
 |--------|---------|--------|----------|
-| The Home Page |
 | Click carousel arrows to change images | Clicks arrow | The image changes to a different one | ![]() |
 | Navigate to the Menu page from the home page | Click the menu button | The webpage changes to the Menu page | ![]() |
 | Navigate to the Reservations page from the home page | Click the reservations button | The webpage changes to the Reservations page | ![]() |
 | Navigate to the Contact page from the home page | Click the contact button | The webpage changes to the Contact page | ![]() |
 | Redirect back to the Home page | Click on the logo | The webpage redirects the user to the home page | ![]() |
-| The Menu Page |
 | Display the Wine & Sake menu | Click on the button | A modal appears displaying the Wine & Sake menu | ![]() |
-| The About Page |
 | Navigate to the Reservations page from the About page | Click on the Make a reservation button | The webpage will change to the reservations page | ![]() |
 | Navigate to the Contact page from the About page | Click on the Contact us button | The webpage will change to the Contact page | ![]() |
-| The FAQ Page |
 | Navigate to the Contact page from the FAQ page | Click on the Contact us button | The webpage will change to the Contact page | ![]() |
 | View an FAQ | Click on a FAQ to view | The selected FAQ will display a dropdown, providing information about that question | ![]() |
-| The Contact Page |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| When logged in, navigate to the review form | Click on the leave a review button | The webpage changes to the review form | ![]() |
+| Try to log in | Click on the log in button to show the modal, then click the log in link | The webpage changes to the sign-in form | ![]() |
+| Try to register | Click on the log in button to show the modal, then click the register link | The webpage changes to the register form | ![]() |
+| Try to log in from register form | Click on the Sign-in button | The webpage changes to the sign-in form | ![]() |
+| Try to register from sign in form | Click on the Sign-up button | The webpage changes to the sign-up form | ![]() |
+| Create an account | Input details and click the Sign-up button | The webpage changes to the home page and "Log in" changes to "Log out" | ![]() |
+| Signing in | Input details and click the Sign-in button | The webpage changes to the home page and "Log in" changes to "Log out" | ![]() |
+| Logging out | Click the log out button in the navigation bar | A modal will show asking user to confirm, this will then take you to the sign out form | ![]() |
+| Confirming Log out | Click the sign-out button | The webpage changes to the home page and "Log out" changes back to "Log in" | ![]() |
+| Navigate to the register or log in forms from the reservations page | Click on either button respectively | The webpage changes to the respective form | ![]() |
+| Make a reservation | Click on the "Make a reservation" button | A reseravtion modal shows allowing the user to input details and confirming with a button and a success message | ![]() |
+| View your reservations | If logged in, click on "View your reservations" | The webpage will change to display your reservations page | ![]() |
+| Cancel a reservation | Click the "cancel" button | This takes you to another webpage where you can confirm your cancellation | ![]() |
+| Modify a reservation | Click the "modify" button | This takes you to another webpage giving you the same reservation form to adjust your details and confirm the modification | ![]() |
 
 
 
