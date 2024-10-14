@@ -44,7 +44,7 @@ For this project users want to be able to:
 - As a **user**, I am able to **sign-up to the restaurants newsletter** so that **I can receive information about promotions or any news/events**
 
 
-![KUIDAORE Project Board](/documentation/images/)
+![KUIDAORE Project Board](/documentation/images/project-board.webp)
 
 This displays a mixture of completed and nearly completed issues:
   -  The to be completed column only contains issues that were considered future implemented features.
