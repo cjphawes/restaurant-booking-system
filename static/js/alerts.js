@@ -9,7 +9,7 @@ window.onload = function() {
                 setTimeout(function() {
                     alert.remove();
                 }, 300);
-            }, 3000)
+            }, 3000);
         });
     }
 };
