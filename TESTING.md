@@ -89,7 +89,10 @@ No errors were found when passing it through the validator
 | Cancel a reservation | Click the "cancel" button | This takes you to another webpage where you can confirm your cancellation | ![]() |
 | Modify a reservation | Click the "modify" button | This takes you to another webpage giving you the same reservation form to adjust your details and confirm the modification | ![]() |
 
-
-
+## Lighthouse Dev Tools
+I used the Lighthouse Dev Tools to assess the performance and accessibility of my website.
+![Lighthouse Dev Tool](/documentation/images)
 
 ### Compatibility Issues
+- I was unable to change the styling of the AllAuth authentication packages.
+
