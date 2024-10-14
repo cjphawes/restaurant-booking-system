@@ -232,7 +232,7 @@ Please refer to the [TESTING.md](/TESTING.md) for all test-related documentation
 ```
 
 ### Mistakes 
-There were seven mistakes while committing to Github.
+There were eight mistakes while committing to Github.
 - **022d1c5** - "feat:remove template views & add func for update rbookings" _Supposed to be_: "feat:remove template views & add func for update bookings"
 - **e7a764c** - "add migrations" _Supposed to be_: "maint:add migrations"
 - **6372021** - "add js for form function" _Supposed to be_: "feat:add js for form function"
@@ -240,6 +240,8 @@ There were seven mistakes while committing to Github.
 - **0c74670** - "use bs5 to make footer sticky" _Supposed to be_: "feat:use bs5 to make footer sticky"
 - **3aa8e37** - "feat:add correct favion links & wire up html templates to navbar" _Supposed to be_: "feat:add correct favicon links & wire up html templates to navbar"
 - **4f013c5** - "style:add my o css classes for styling of navbar and title" _Supposed to be_: "style:add my own css classes for styling of navbar and title"
+- **522413b** - "docs:add validation of css and html" _Supposed to be_: "docs:add agile project board for user story/issues"
+
 
 ---
 
