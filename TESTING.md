@@ -63,6 +63,7 @@ No errors were found when passing it through the validator
 ## Manual Testing
 
 | Action | Testing | Result | Evidence |
+|--------------------------------------|
 | The Home Page |
 | Click carousel arrows to change images | Clicks arrow | The image changes to a different one | ![]() |
 | Navigate to the Menu page from the home page | Click the menu button | The webpage changes to the Menu page | ![]() |
