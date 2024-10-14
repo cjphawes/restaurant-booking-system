@@ -62,4 +62,31 @@ No errors were found when passing it through the validator
 
 ## Manual Testing
 
+| Action | Testing | Result | Evidence |
+| The Home Page |
+| Click carousel arrows to change images | Clicks arrow | The image changes to a different one | ![]() |
+| Navigate to the Menu page from the home page | Click the menu button | The webpage changes to the Menu page | ![]() |
+| Navigate to the Reservations page from the home page | Click the reservations button | The webpage changes to the Reservations page | ![]() |
+| Navigate to the Contact page from the home page | Click the contact button | The webpage changes to the Contact page | ![]() |
+| Redirect back to the Home page | Click on the logo | The webpage redirects the user to the home page | ![]() |
+| The Menu Page |
+| Display the Wine & Sake menu | Click on the button | A modal appears displaying the Wine & Sake menu | ![]() |
+| The About Page |
+| Navigate to the Reservations page from the About page | Click on the Make a reservation button | The webpage will change to the reservations page | ![]() |
+| Navigate to the Contact page from the About page | Click on the Contact us button | The webpage will change to the Contact page | ![]() |
+| The FAQ Page |
+| Navigate to the Contact page from the FAQ page | Click on the Contact us button | The webpage will change to the Contact page | ![]() |
+| View an FAQ | Click on a FAQ to view | The selected FAQ will display a dropdown, providing information about that question | ![]() |
+| The Contact Page |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+
+
 ### Compatibility Issues
