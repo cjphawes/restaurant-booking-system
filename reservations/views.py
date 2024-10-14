@@ -7,35 +7,35 @@ from .models import Review, Reservation, User
 from datetime import datetime
 
 
-
 class ReservationView(TemplateView):
     template_name = 'reservations/reservations.html'
-
 
 
 class ContactView(TemplateView):
     template_name = 'reservations/contact.html'
 
 
-
 class MenuView(TemplateView):
     template_name = 'reservations/menu.html'
-
 
 
 """
 Function display all of the users reservations made
 """
+
+
 @login_required
 def list_reservations(request):
     reservations = Reservation.objects.filter(customer=request.user)
-    return render(request, 'reservations/view_reservation.html', {'reservations': reservations})
-
+    return render(request, 'reservations/view_reservation.html',
+                  {'reservations': reservations})
 
 
 """
 Function to allow user to update their reservation
 """
+
+
 def update_reservation(request, reservation_id):
     reservation = get_object_or_404(Reservation, id=reservation_id)
 
@@ -49,7 +49,8 @@ def update_reservation(request, reservation_id):
             messages.error(request, "Please complete all fields.")
         else:
             """
-            The datetime module I used to convert the string time into an object which works with Django's TimeField.
+            The datetime module I used to convert the string time into an
+            object which works with Django's TimeField.
             """
             time_selected = datetime.strptime(reservation_time, '%H:%M').time()
 
@@ -62,14 +63,15 @@ def update_reservation(request, reservation_id):
 
             return redirect('reservationDetails')
 
-    return render(request, "reservations/update_reservation.html", {'reservation': reservation})
-
-
+    return render(request, "reservations/update_reservation.html",
+                  {'reservation': reservation})
 
 
 """
 Function to delete existing reservations
 """
+
+
 def remove_reservation(request, reservation_id):
     reservation = get_object_or_404(Reservation, id=reservation_id)
 
@@ -79,14 +81,16 @@ def remove_reservation(request, reservation_id):
 
         return redirect("reservationDetails")
 
-    return render(request, 'reservations/delete_reservation.html', {'reservation': reservation})
-
+    return render(request, 'reservations/delete_reservation.html',
+                  {'reservation': reservation})
 
 
 """
 Function to POST review forms to the database
 """
-def leave_review(request):    
+
+
+def leave_review(request):
     if request.method == "POST":
         name = request.POST.get("name")
         subject = request.POST.get("subject")
@@ -95,10 +99,12 @@ def leave_review(request):
         if not name or not subject or not content:
             messages.error(request, "Please complete all fields.")
         else:
-            review = Review(reviewer_name=name, subject=subject, review_content=content)
+            review = Review(reviewer_name=name, subject=subject,
+                            review_content=content)
 
             review.save()
-            messages.success(request, "Review submitted! Thank you for your feedback.")
+            messages.success(request,
+                             "Review submitted! Thank you for your feedback.")
 
         return redirect("contact")
 
@@ -108,6 +114,8 @@ def leave_review(request):
 """
 Function to create a reservation to the database
 """
+
+
 def make_reservation(request):
     if request.method == "POST":
         name = request.POST.get("name")
@@ -119,14 +127,19 @@ def make_reservation(request):
             messages.error(request, "Please complete all fields.")
         else:
             """
-            The datetime module I used to convert the string time into an object which works with Django's TimeField.
+            The datetime module I used to convert the string time into an
+            object which works with Django's TimeField.
             """
             time_selected = datetime.strptime(time, '%H:%M').time()
 
-            reservation = Reservation(customer=request.user, name=name, reservation_date=date, reservation_time=time_selected, number_of_guests=guests)
+            reservation = Reservation(customer=request.user, name=name,
+                                      reservation_date=date,
+                                      reservation_time=time_selected,
+                                      number_of_guests=guests)
 
             reservation.save()
-            messages.success(request, "You're all set! We look forward to you joining us.")
+            messages.success(request,
+                             "You're all set! We look forward to you joining us.")
 
             client_email = reservation.customer.email
         return redirect('reservation')
