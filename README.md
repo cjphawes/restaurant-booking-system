@@ -141,16 +141,27 @@ The FAQ page includes:
 
 ## Technologies Used
 
-- Python [4.2.15](https://docs.djangoproject.com/en/5.1/releases/4.2.15/)
+#### Languages
+- [Python](https://docs.djangoproject.com/en/5.1/releases/4.2.15/)
+- [JS](https://www.javascript.com/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+#### Frameworks
+- [Django 4.2.15](https://docs.djangoproject.com/en/5.1/releases/4.2.15/)
+
+#### Databases
+- [Code Institutes Postgresql](https://www.postgresql.org/)
 
 #### 3rd Party Imports
+  - [Pip3](https://pypi.org/project/pip/)
   - [allauth](https://docs.allauth.org/en/latest/)
   - [summernote](https://pypi.org/project/django-summernote/)
   - [crispy forms with boostrap 5](https://django-crispy-forms.readthedocs.io/en/latest/)
-  - [gunicorn](https://gunicorn.org/)
+  - [Gunicorn](https://gunicorn.org/)
   - [whitenoise](https://whitenoise.readthedocs.io/en/stable/django.html)
   - [sqlparse](https://pypi.org/project/sqlparse/) 
-  - [psycopg2](https://pypi.org/project/psycopg2/)
+  - [Psycopg2](https://pypi.org/project/psycopg2/)
   - [oauthlib](https://oauthlib.readthedocs.io/en/latest/)
   - [PyJWT](https://pyjwt.readthedocs.io/en/latest/)
   - [asgiref](https://pypi.org/project/asgiref/)
@@ -164,6 +175,10 @@ The FAQ page includes:
   - [Github](https://github.com/) was used to upload and host my code for collaboration purposes.
   - [Heroku](https://dashboard.heroku.com/apps) was used for the deployment of the website.
   - [Lucidchart](https://www.lucidchart.com/pages/) was used for the creation of my ERD model. 
+  - [W3C Validator](https://validator.w3.org/) was used to validate HTML5 code for the website.
+  - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) was used to validate CSS code for the website.
+  - [JShint](https://jshint.com/) was used to validate JS code for the website.
+  - [Code Institute Python Linter](https://pep8ci.herokuapp.com/#) was used to validate Python code for the website.
 
 ---
 
@@ -202,6 +217,12 @@ Please refer to the [TESTING.md](/TESTING.md) for all test-related documentation
 - I was unable to Style the AllAuth html templates for Sign-up, Sign-in & Sign-out forms.
 - Couldn't disable dates in the calendar from before current date for user to not select, when making or updating their reservations.
 - When changing to a different screen width, the carousel images would not shrink proportionally.
+- In the update_reservation.html, the if statement was showing an error in the code but still worked. 
+
+```
+<option value="17:00" {% if reservation.reservation_time|date:'H:i' == "17:00" %}selected{% endif %}>17:00</option>
+
+```
 
 ### Mistakes 
 There were seven mistakes while committing to Github.
@@ -228,8 +249,8 @@ Please refer to the [DEPLOYMENT.md](/DEPLOYMENT.md) for all deployment documenta
 ### Credits
 ##### Content
   - I used [Chat GPT](https://chatgpt.com/) for generating text for each page.
-  - I give credit to Aileen Sigua for the creation of the Name of the website.
-  - I used [Stack Overflow]()
+  - I used [Stack Overflow](https://fontawesome.com/) for advice on how to get around problems with modals & BS5 issues.
+  - I used [Font Awesome](https://fontawesome.com/) was used to create the icons used in the website.
 
 ##### Media
   - I used [ImageResizer](https://imageresizer.com/) for all the README.md, DEPLOYMENT.md, ERDDIAGRAM.md, WIREFRAMES.md and TESTING.md file images.
