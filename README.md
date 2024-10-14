@@ -43,6 +43,13 @@ For this project users want to be able to:
 - As a **user**, I am able to **review and send a feedback form to the restaurant** so that **I can influence other potential customers, and improve their website or restaurant**.
 - As a **user**, I am able to **sign-up to the restaurants newsletter** so that **I can receive information about promotions or any news/events**
 
+
+![KUIDAORE Project Board](/documentation/images/)
+
+This displays a mixture of completed and nearly completed issues:
+  -  The to be completed column only contains issues that were considered future implemented features.
+  - The In Progress column contains two issues that require one more action in them to be completed, one of which is a future feature with emailJS.
+
 ---
 
 ## Wireframes
