@@ -132,7 +132,6 @@ footer {
     height: 80vh;
     width: 100%;
     object-fit: cover;
-    /* object-position: 0% 50%; */
 }
 
 .carousel-control-next-icon,
