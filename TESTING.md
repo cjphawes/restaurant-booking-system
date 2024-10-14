@@ -2,26 +2,23 @@
 
 # TESTING
 
-The program was tested constantly throughout the development process. I had multiple users try out my game on multiple web browsers to spot bugs or grammatical mistakes which they found and I corrected, or noted down in the [Compatibility issues](#compatibility-section) section.
+The program was tested constantly throughout the development process. I had multiple users try out my game on multiple web browsers to spot bugs or grammatical mistakes which they found and I corrected, or noted down in the [Compatibility issues](#compatibility-issues) section.
 
 ## Validation Testing
 
-### Python Files
+### Python Validation
 I used the Code Institute Python Linter to ensure sure the source code throughout was PEP8 compliant. The only errors were found in: 
 
--   Settings.py
--   
+-   Kuidaore/Settings.py - due to not being able to shorten the length of objects
+![PEP8 Validation 1](/documentation/images/pep8-validation-1.webp)
+-   Reservations/Views.py - due to not being able to shorten the length of the if statement
+![PEP8 Validation 2](/documentation/images/pep8-validation-2.webp)
 
-#### Home App
--   urls.py
-![]()
-
-
-## HTML Validation
+### HTML Validation
 The errors that were commonly thrown were:
 -   Any Django html template tags
 -   Top level elements not being present such as `head`, `lang=en`, `!DOCTYPE html` & `title`, but this was due to me using Django html templates.
--   On update_reservation.html, the codes:
+-   On `update_reservation.html`, the code is as shown:
 
     ```
         <option value="17:00" {% if reservation.reservation_time|date:"H:i" == "17:00" %}selected{% endif %}>17:00</option>
@@ -53,12 +50,16 @@ The errors that were commonly thrown were:
     ```
     threw up errors with the equal signs and the quotation marks inside the if tag.
 
-    However, despite this, my website ran smoothly with no major errors occurring.
+    However, despite this, my website ran smoothly with no errors occurring and functionality working as it should.
 
-## CSS Validation
+### CSS Validation
 No errors were found when passing it through the validator.
 ![W3C CSS Validation Image](/documentation/images/css-validation.webp)
 
-## JS Validation
+### JS Validation
 No errors were found when passing it through the validator
 ![JSHint Validation Image](/documentation/images/jshint-validation.webp)
+
+## Manual Testing
+
+### Compatibility Issues
