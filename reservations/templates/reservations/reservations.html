@@ -16,12 +16,12 @@
             
             <div class="d-flex flex-column align-items-center">
                 {% if user.is_authenticated %}
-                <button type="button" class="btn btn-light btn-lg mt-4 about-buttons" data-bs-toggle="modal" data-bs-target="#reservationModal"><strong>MAKE A RESERVATION</strong></button>
-                <a class="btn btn-sm border-secondary border-3 text-secondary about-buttons mt-3 w-25 px-2" href="{% url 'reservationDetails' %}"><strong>VIEW YOUR RESERVATIONS</strong></a>
+                <button type="button" class="btn btn-light btn-lg mt-4 about-buttons mq-reservation-links" data-bs-toggle="modal" data-bs-target="#reservationModal"><strong>MAKE A RESERVATION</strong></button>
+                <a class="btn btn-sm border-secondary border-3 text-secondary about-buttons mt-3 w-25 px-2 mq-reservation-links" href="{% url 'reservationDetails' %}"><strong>VIEW YOUR RESERVATIONS</strong></a>
                 {% else %}
                 <p class="text-secondary text-center mt-5 fs-5">To make a reservation or view your reservations, please sign in</p>
                 <div class="d-flex mt-5 align-items-center">
-                    <a class="nav-link {% if request.path == signup_url %}active{% endif %} btn btn-lg btn-light text-dark me-5 px-4 py-3 fs-3" aria-current="page"
+                    <a class="nav-link {% if request.path == signup_url %}active{% endif %} btn btn-lg btn-light text-dark me-5 px-4 py-3 fs-3 mq-reservation-links" aria-current="page"
                     href="{% url 'account_signup' %}"><strong>Register</strong></a>
                     <span class="text-light fs-4">OR</span>
                     <a class="nav-link {% if request.path == login_url %}active{% endif %} btn btn-lg btn-light text-dark ms-5 px-4 py-3 fs-3" aria-current="page" href="{% url 'account_login' %}"><strong>Log In</strong></a>
