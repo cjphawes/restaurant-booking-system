@@ -6,18 +6,20 @@ from .models import Reservation, Review
 from django_summernote.admin import SummernoteModelAdmin
 from django_summernote.utils import get_attachment_model
 
+
 @admin.register(Reservation)
-class ReservationAdmin(SummernoteModelAdmin):  
-    list_display = ('customer', 'reservation_date', 'reservation_time', 'number_of_guests')
+class ReservationAdmin(SummernoteModelAdmin):
+    list_display = (
+        'customer', 'reservation_date', 'reservation_time', 'number_of_guests')
     search_fields = (['customer__full_name__icontains', 'reservation_date'])
     list_filter = ('customer', 'reservation_date',)
-
 
 
 @admin.register(Review)
 class FeedbackAdmin(SummernoteModelAdmin):
     list_filter = ('review_date',)
     search_fields = (['reviewer_name', 'subject'])
+
 
 # ADMIN PANELS THAT I WILL NOT NEED
 admin.site.unregister(Site)

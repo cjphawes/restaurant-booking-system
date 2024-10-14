@@ -7,7 +7,7 @@
 <div class="d-flex flex-column align-items-center mt-5">
     <h2 class="mt-5 fs-1">CONTACT</h2>
     <p class="mt-5">2837 Ocean Breeze Drive Malibu, CA 90265</p>
-    <a href="tel:+1 (310) 555-7289" class="text-light mt-2">+1 (310) 555-7289</a>
+    <a href="tel:+1(310)5557289" class="text-light mt-2">+1 (310) 555-7289</a>
 </div>
 
 <hr class="mt-5">
@@ -21,11 +21,11 @@
 
 <div class="mt-5 d-flex justify-content-center">
     {% if user.is_authenticated %}
-    <a href="{% url 'submit_review' %}" type="button" class="btn text-light btn-sm p-3 fs-5 border-light border-3 mt-5 mx-auto"><strong>LEAVE A REVIEW</strong></a>
+    <a href="{% url 'submit_review' %}" class="btn text-light btn-sm p-3 fs-5 border-light border-3 mt-5 mx-auto"><strong>LEAVE A REVIEW</strong></a>
     {% else %}
     <div class="d-flex flex-column">
         <p class="mt-3 text-warning">You must be logged in to leave a review.</p>
-        <a href="{% url 'submit_review' %}" type="button" class="btn disabled text-light btn-sm p-3 fs-5 border-light border-3 mt-3 mx-auto"><strong>LEAVE A REVIEW</strong></a>
+        <a href="{% url 'submit_review' %}" class="btn disabled text-light btn-sm p-3 fs-5 border-light border-3 mt-3 mx-auto"><strong>LEAVE A REVIEW</strong></a>
     </div>
     {% endif %}
 </div>

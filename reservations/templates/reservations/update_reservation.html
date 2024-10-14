@@ -14,8 +14,8 @@
             <div class="pe-4 mb-4">
                 <label for="reservation-time">Time</label>
                 <select class="form-select" id="reservation-time" name="time" aria-label="Floating label select time" required>
-                    <option value="17:00" {% if reservation.reservation_time|stringformat:'H:i' == "17:00" %}selected{% endif %}>17:00</option>
-                    <option value="17:30" {% if reservation.reservation_time|stringformat:'H:i' == "17:30" %}selected{% endif %}>17:30</option>
+                    <option value="17:00" {% if reservation.reservation_time|date:'H:i' == "17:00" %}selected{% endif %}>17:00</option>
+                    <option value="17:30" {% if reservation.reservation_time|date:'H:i' == "17:30" %}selected{% endif %}>17:30</option>
                     <option value="18:00" {% if reservation.reservation_time|date:'H:i' == "18:00" %}selected{% endif %}>18:00</option>
                     <option value="18:30" {% if reservation.reservation_time|date:'H:i' == "18:30" %}selected{% endif %}>18:30</option>
                     <option value="19:00" {% if reservation.reservation_time|date:'H:i' == "19:00" %}selected{% endif %}>19:00</option>
