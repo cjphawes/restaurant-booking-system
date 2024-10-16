@@ -35,15 +35,15 @@ For this project users want to be able to:
 
 | **As a** | **I can** | **So that** |
 |----------|-----------|-------------|
-| **User** | **Reserve a time slot dictating the number of guests I would like attending** | **I can visit this restaurant with friends** |
-| **User** | **Navigate the website easily** | **I am able to find all the necessary requirements I need to create a reservation or make a review** |
-| **User** | **Send a cancellation for a reservation** | **My reservations are always up to date with the correct information** |
-| **User** | **Get answers to any questions or query's I may have** | **I can make a informed decision if want to visit the restaurant** |
-| **User** | **Register an account with the restaurant** | **My details are saved for ease of reservations the next time I intend to visit** |
-| **User** | **Change the preferred language of the website** | **I am able to go through the website and understand it in my own language** |
-| **User** | **View the menu before attending** | **I can decide what food I would like** |
-| **User** | **Review and send a feedback form to the restaurant** | **I can influence other potential customers, and provide constructive criticism to improve their website or restaurant** |
-| **User** | **Sign-up to the restaurants newsletter** | **I can receive information about promotions or any news/events** |
+| User | Reserve a time slot dictating the number of guests I would like attending | I can visit this restaurant with a certain number of friends |
+| User | Navigate the website easily | I am able to find all the necessary requirements I need to create a reservation or leave a review |
+| User | Send a cancellation for a reservation | My reservations are always up to date with the correct information |
+| User | Get answers to any questions or queries I may have | I can make an informed decision whether or not I want to visit the restaurant |
+| User | Register an account with the restaurant | My details are saved for ease of reservations the next time I intend to visit |
+| User | Change the preferred language of the website | I am able to go through the website and understand it in my own language |
+| User | View the menu before attending | I can decide what food I would like to eat |
+| User | Review and send a feedback form to the restaurant | I can provide constructive criticism to improve their website or restaurant |
+| User | Sign-up to the restaurants newsletter | I can receive information about promotions or any news/events |
 
 ---
 
