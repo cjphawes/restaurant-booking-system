@@ -34,7 +34,7 @@ For this project users want to be able to:
 ## User Stories
 
 | User | Capability | Benefit |
-|------|------------|---------|
+|------|------------|---------|---|---|---|
 | As a | **User** | I can | **Reserve a time slot dictating the number of guests I would like attending** | so that | **I can visit this restaurant with friends** |
 | As a | **User** | I can | **Navigate the website easily** | so that | **I am able to find all the necessary requirements I need to create a reservation or make a review** |
 | As a | **User** | I can | **Send a cancellation for a reservation** | so that | **My reservations are always up to date with the correct information** |
