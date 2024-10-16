@@ -33,6 +33,18 @@ For this project users want to be able to:
 
 ## User Stories
 
+| As a | **User** | I can | **Reserve a time slot dictating the number of guests I would like attending** | so that | **I can visit this restaurant with friends** |
+| As a | **User** | I can | **Navigate the website easily** | so that | **I am able to find all the necessary requirements I need to create a reservation or make a review** |
+| As a | **User** | I can | **Send a cancellation for a reservation** | so that | **My reservations are always up to date with the correct information** |
+| As a | **User** | I can | **Get answers to any questions or query's I may have** | so that | **I can make a informed decision if want to visit the restaurant** |
+| As a | **User** | I can | **Register an account with the restaurant** | so that | **My details are saved for ease of reservations the next time I intend to visit** |
+| As a | **User** | I can | **Change the preferred language of the website** | so that | **I am able to go through the website and understand it in my own language** |
+| As a | **User** | I can | **View the menu before attending** | so that | **I can decide what food I would like** |
+| As a | **User** | I can | **Review and send a feedback form to the restaurant** | so that | **I can influence other potential customers, and provide constructive criticism to improve their website or restaurant** |
+| As a | **User** | I can | **Sign-up to the restaurants newsletter** | so that | **I can receive information about promotions or any news/events** |
+
+---
+
 - As a **user**, I can **reserve a time slot with the number of people** so that **I can eat at the restaurant alone or with others**.
 - As a **user**, I can **navigate the website easily** so that **I am able to tell if I like the look of wanting to eat there**.
 - As a **user**, I am able to **send a cancellation for a reservation** so that **my reservations can be removed**.
@@ -43,6 +55,7 @@ For this project users want to be able to:
 - As a **user**, I am able to **review and send a feedback form to the restaurant** so that **I can influence other potential customers, and improve their website or restaurant**.
 - As a **user**, I am able to **sign-up to the restaurants newsletter** so that **I can receive information about promotions or any news/events**
 
+#### Project Board
 
 ![KUIDAORE Project Board](/documentation/images/project-board.webp)
 
