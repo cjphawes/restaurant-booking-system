@@ -33,17 +33,17 @@ For this project users want to be able to:
 
 ## User Stories
 
-| As a **User** | I can **Capability** | So that **Benefit** |
-|---------------|----------------------|---------------------|
-| As a **User** | I can **Reserve a time slot dictating the number of guests I would like attending** | so that **I can visit this restaurant with friends** |
-| As a **User** | I can **Navigate the website easily** | so that **I am able to find all the necessary requirements I need to create a reservation or make a review** |
-| As a **User** | I can **Send a cancellation for a reservation** | so that **My reservations are always up to date with the correct information** |
-| As a **User** | I can **Get answers to any questions or query's I may have** | so that **I can make a informed decision if want to visit the restaurant** |
-| As a **User** | I can **Register an account with the restaurant** | so that **My details are saved for ease of reservations the next time I intend to visit** |
-| As a **User** | I can **Change the preferred language of the website** | so that **I am able to go through the website and understand it in my own language** |
-| As a **User** | I can **View the menu before attending** | so that **I can decide what food I would like** |
-| As a **User** | I can **Review and send a feedback form to the restaurant** | so that **I can influence other potential customers, and provide constructive criticism to improve their website or restaurant** |
-| As a **User** | I can **Sign-up to the restaurants newsletter** | so that **I can receive information about promotions or any news/events** |
+| **As a** | **I can** | **So that** |
+|----------|-----------|-------------|
+| **User** | **Reserve a time slot dictating the number of guests I would like attending** | **I can visit this restaurant with friends** |
+| **User** | **Navigate the website easily** | **I am able to find all the necessary requirements I need to create a reservation or make a review** |
+| **User** | **Send a cancellation for a reservation** | **My reservations are always up to date with the correct information** |
+| **User** | **Get answers to any questions or query's I may have** | **I can make a informed decision if want to visit the restaurant** |
+| **User** | **Register an account with the restaurant** | **My details are saved for ease of reservations the next time I intend to visit** |
+| **User** | **Change the preferred language of the website** | **I am able to go through the website and understand it in my own language** |
+| **User** | **View the menu before attending** | **I can decide what food I would like** |
+| **User** | **Review and send a feedback form to the restaurant** | **I can influence other potential customers, and provide constructive criticism to improve their website or restaurant** |
+| **User** | **Sign-up to the restaurants newsletter** | **I can receive information about promotions or any news/events** |
 
 ---
 
