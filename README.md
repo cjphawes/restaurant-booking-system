@@ -50,8 +50,8 @@ For this project users want to be able to:
 ![KUIDAORE Project Board](/documentation/images/project-board.webp)
 
 This displays a mixture of completed, nearly completed and not started issues:
-  -  The to be completed column only contains issues that were considered future implemented features, such as a newsletter, changing the language and rating the restaurant.
   - The In Progress column contains one issue that require one more action in it to be completed, which is a future feature with emailJS.
+  - The future feature column contains three issues, creating a review system for the restaurant, changing the language of the website for accessibility and creating a newsletter.
 
 ---
 
