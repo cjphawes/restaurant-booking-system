@@ -45,25 +45,13 @@ For this project users want to be able to:
 | User | Review and send a feedback form to the restaurant | I can provide constructive criticism to improve their website or restaurant |
 | User | Sign-up to the restaurants newsletter | I can receive information about promotions or any news/events |
 
----
-
-- As a **user**, I can **reserve a time slot with the number of people** so that **I can eat at the restaurant alone or with others**.
-- As a **user**, I can **navigate the website easily** so that **I am able to tell if I like the look of wanting to eat there**.
-- As a **user**, I am able to **send a cancellation for a reservation** so that **my reservations can be removed**.
-- As a **user**, I can **get answers to any questions or query's I may have** so that **I can make a better decision whether I want to visit the restaurant**.
-- As a **user**, I can **register an account with the restaurant** so that **my details are saved for ease of reservations the next time I intend to visit**.
-- As a **user**,  I am able to **change the preferred language of the website** so that **I am able to go through the website and understand it in my own language**.
-- As a **user**, I can **view the menu before attending** so that **I can decide whether I would like the food**.
-- As a **user**, I am able to **review and send a feedback form to the restaurant** so that **I can influence other potential customers, and improve their website or restaurant**.
-- As a **user**, I am able to **sign-up to the restaurants newsletter** so that **I can receive information about promotions or any news/events**
-
-#### Project Board
+### Project Board
 
 ![KUIDAORE Project Board](/documentation/images/project-board.webp)
 
-This displays a mixture of completed and nearly completed issues:
-  -  The to be completed column only contains issues that were considered future implemented features.
-  - The In Progress column contains two issues that require one more action in them to be completed, one of which is a future feature with emailJS.
+This displays a mixture of completed, nearly completed and not started issues:
+  -  The to be completed column only contains issues that were considered future implemented features, such as a newsletter, changing the language and rating the restaurant.
+  - The In Progress column contains one issue that require one more action in it to be completed, which is a future feature with emailJS.
 
 ---
 
