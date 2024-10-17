@@ -30,7 +30,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse justify-content-end mq-navbar-container" id="navbarNavAltMarkup">
         <div class="navbar-nav fs-6">
           <a class="nav-link" href="{% url 'menu' %}">MENU</a>
           <a class="nav-link" href="{% url 'reservation' %}">RESERVATIONS</a>
@@ -38,9 +38,9 @@
           <a class="nav-link" href="{% url 'faq' %}">FAQ</a>
           <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
           {% if user.is_authenticated %}
-          <button type="button" class="btn px-2" data-bs-toggle="modal" data-bs-target="#accountModal"><span class="bg-secondary text-dark rounded p-1"><strong>LOG OUT</strong></span></button>        
+          <button type="button" class="btn px-2 d-flex justify-content-start" data-bs-toggle="modal" data-bs-target="#accountModal"><span class="bg-secondary text-dark rounded p-1 py-0"><strong>LOG OUT</strong></span></button>        
           {% else %}
-          <button type="button" class="btn px-2" data-bs-toggle="modal" data-bs-target="#accountModal"><span class="bg-light p-1 rounded"><strong>LOG IN</strong></span></button>        
+          <button type="button" class="btn px-2 d-flex justify-content-start " data-bs-toggle="modal" data-bs-target="#accountModal"><span class="bg-light p-1 rounded py-0"><strong>LOG IN</strong></span></button>        
           {% endif %}
         </div>
       </div>
