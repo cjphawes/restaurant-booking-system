@@ -277,6 +277,6 @@ Please refer to the [DEPLOYMENT.md](/DEPLOYMENT.md) for all deployment documenta
 
 ## To do list
 - Remove carousel after breakpoint, into gallery
-- change mobile size nav bar
+- change mobile size nav bar & landing page link spacing.
 - testing for user stories / manual testing
 - AUTOMATED / MANUAL TESTING
