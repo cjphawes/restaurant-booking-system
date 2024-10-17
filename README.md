@@ -142,6 +142,10 @@ This displays a mixture of completed, nearly completed and not started issues:
 
 ![Contact page image](/documentation/images/contact-page-img-2.webp)
 
+### Things to mention
+- Added AllAuth however aren't using sites and social accounts models.
+- Not using Summernote attachments.
+
 ### Future Features to Implement
 - Options for logging in through Social accounts rather than just standard emails.
 - An additional contact form for general queries.
@@ -271,13 +275,6 @@ Please refer to the [DEPLOYMENT.md](/DEPLOYMENT.md) for all deployment documenta
   - I used [Unsplash](https://unsplash.com/) for all the images used in the website.
   - I used [Chrome Capture Extension](https://chromewebstore.google.com/detail/chrome-capture-gif-screen/ggaabchcecdbomdcnbahdfddfikjmphe) for all the documentation images in the TESTING.md file.
 
-## Current Problems Occurring
-- Formatting buttons on home page when changing screen size
-
 ## To do list
 - Remove carousel after breakpoint, into gallery
-
-## Things to mention
-- Added AllAuth however aren't using sites and social accounts models.
-- Not using summernote attachments
-- Used Chat GPT for timing calculations for backend
+- change mobile size nav bar
