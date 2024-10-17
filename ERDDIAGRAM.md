@@ -23,7 +23,6 @@
 | name | CharField | max_length=150 |
 | reservation_time | TimeField |  |
 | reservation_date | DateField |  |
-| number_of_guests | Integer | default=1,
-        validators=[MinValueValidator(1), MaxValueValidator(10)] |
+| number_of_guests | Integer | default=1, validators=[MinValueValidator(1), MaxValueValidator(10)] |
 
 _Note_: I used Min & Max Validators for the "number_of_guests" key to make sure a positive number was used and 0 couldn't be input by the user.
