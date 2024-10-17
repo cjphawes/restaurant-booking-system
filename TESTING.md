@@ -2,7 +2,7 @@
 
 # TESTING
 
-The project was tested constantly throughout the development process. I had multiple users try out my website on multiple web browsers to spot bugs or grammatical mistakes which they found and I corrected, or noted down in the [Compatibility issues](#compatibility-issues) section.
+The project was tested constantly throughout the development process. I had multiple users try out my website on multiple web browsers to spot bugs or grammatical mistakes which they found and I corrected.
 
 ## Validation Testing
 
@@ -89,10 +89,20 @@ No errors were found when passing it through the validator
 | Cancel a reservation | Click the "cancel" button | This takes you to another webpage where you can confirm your cancellation | ![]() |
 | Modify a reservation | Click the "modify" button | This takes you to another webpage giving you the same reservation form to adjust your details and confirm the modification | ![]() |
 
+## User Story Testing
+
+| Action | Requirements Met | Evidence |
+|--------|------------------|----------|
+| As a user I can reserve a time slot dictating the number of guests I would like attending so that I can visit this restaurant with a certain number of friends | Y | ![]() |
+| As a user I can navigate the website easily so that I am able to find all the necessary requirements I need to create a reservation or leave a review |  | Y | ![]() |
+| As a user I can send a cancellation for a reservation so that my reservations are always up to date with the correct information | Y | ![]() |
+| As a user I can get answers to any questions or queries I may have so that I can make an informed decision whether or not I want to visit the restaurant | Y | ![]() |
+| As a user I can register an account with the restaurant so that my details are saved for ease of reservations the next time I intend to visit | Y | ![]() |
+| As a user I can change the preferred language of the website so that I am able to go through the website and understand it in my own language | N | **Implemented in Future Feature** |
+| As a user I can view the menu before attending so that I can decide what food I would like to eat | Y | ![]() |
+| As a user I can review and send a feedback form to the restaurant so that I can provide constructive criticism to improve their website or restaurant | Partially completed | ![]() |
+| As a user I can sign-up to the restaurants newsletter so that I can receive information about promotions or any news/events | Y | **Implemented in Future Feature** |
+
 ## Lighthouse Dev Tools
 I used the Lighthouse Dev Tools to assess the performance and accessibility of my website.
 ![Lighthouse Dev Tool](/documentation/images)
-
-### Compatibility Issues
-- I was unable to change the styling of the AllAuth authentication packages.
-
