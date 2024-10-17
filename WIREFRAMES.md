@@ -4,8 +4,11 @@
 
 - The design is very similar with only a couple of minor changes from the original design such as:
     - Some wording has changed on buttons etc.
+    - The "Log in" / "Log out" link in the navigation bar was changed into a button taking you to a modal.
     - The authentication modals are now html pages due to using Django's AllAuth package
     - The removal of links in the footer.
+    - The newsletter hasn't been implemented yet.
+    - The navigation bar in the mobile view isn't overlaid but a dropdown instead.
 
 ## Web Wireframes
 
