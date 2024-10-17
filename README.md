@@ -47,11 +47,13 @@ For this project users want to be able to:
 
 ### Project Board
 
+GitHub Project Boards were used to manage the project. It helped me to prioritize the tasks and to keep track of my progress. 
+
 ![KUIDAORE Project Board](/documentation/images/project-board.webp)
 
 This displays a mixture of completed, nearly completed and not started issues:
   - The In Progress column contains one issue that require one more action in it to be completed, which is a future feature with emailJS.
-  - The future feature column contains three issues, creating a review system for the restaurant, changing the language of the website for accessibility and creating a newsletter.
+  - The Future Features column contains three issues, creating a review system for the restaurant, changing the language of the website for accessibility and creating a newsletter.
 
 ---
 
@@ -126,7 +128,8 @@ This displays a mixture of completed, nearly completed and not started issues:
 
 ### FAQ Page
 ![FAQ page image](/documentation/images/faq-page-img-1.webp)
-The FAQ page includes:
+
+- The FAQ page includes:
   - A list of FAQ's asked by the customers for better ease of understanding for future customers
   - An additional link to the contact page in case they need to ask further questions.
 
@@ -245,7 +248,6 @@ There were eight mistakes while committing to Github.
 - **4f013c5** - "style:add my o css classes for styling of navbar and title" _Supposed to be_: "style:add my own css classes for styling of navbar and title"
 - **522413b** - "docs:add validation of css and html" _Supposed to be_: "docs:add agile project board for user story/issues"
 
-
 ---
 
 ## Deployment
@@ -262,7 +264,7 @@ Please refer to the [DEPLOYMENT.md](/DEPLOYMENT.md) for all deployment documenta
 ##### Content
   - I used [Chat GPT](https://chatgpt.com/) for generating text for each page.
   - I used [Stack Overflow](https://fontawesome.com/) for advice on how to get around problems with modals & BS5 issues.
-  - I used [Font Awesome](https://fontawesome.com/) was used to create the icons used in the website.
+  - I used [Font Awesome](https://fontawesome.com/) to create the icons used in the website.
 
 ##### Media
   - I used [ImageResizer](https://imageresizer.com/) for all the README.md, DEPLOYMENT.md, ERDDIAGRAM.md, WIREFRAMES.md and TESTING.md file images.
@@ -273,31 +275,9 @@ Please refer to the [DEPLOYMENT.md](/DEPLOYMENT.md) for all deployment documenta
 - Formatting buttons on home page when changing screen size
 
 ## To do list
-- Add css for responsive design
 - Remove carousel after breakpoint, into gallery
 
 ## Things to mention
 - Added AllAuth however aren't using sites and social accounts models.
 - Not using summernote attachments
 - Used Chat GPT for timing calculations for backend
-
-
-## Gitpod Reminders
-
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
