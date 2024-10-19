@@ -21,7 +21,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "8000-cjphawes-restaurantbook-1qwx7mg5tv9.ws.codeinstitute-ide.net",
+    "8000-cjphawes-restaurantbook-1qwx7mg5tv9.ws.codeinstitute-ide.net", "https://8000-cjphawes-restaurantbook-j9vwrsy0v9t.ws-eu116.gitpod.io/"
     '.herokuapp.com']
 
 # Application definition;
