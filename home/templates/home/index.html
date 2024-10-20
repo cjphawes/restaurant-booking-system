@@ -4,8 +4,8 @@
 {% block title %}Luxury Sushi Dining, Malibu, California{% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-    <div id="carouselHeroFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div>
+    <div id="carouselHeroFade" class="carousel slide carousel-fade remove-element" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="../../../static/images/sushi-rice.webp" id="img-sushi-rice" class="d-block w-100 img-fluid carousel-image" alt="image of sushi wrapped in seaweed">
@@ -36,26 +36,26 @@
     </div>
 </div>
 
-<div class="empty-space"></div>
+<div class="empty-space remove-element"></div>
 
-<hr>
+<hr class="remove-element">
 
 <div class="empty-space"></div>
 
 <div class="container">
     <div class="row mx-auto text-center mq-index-links-container">
         <div class="col">
-            <h2 class="mb-5 fs-4"><strong>MENU</strong></h2>
+            <h2 class="mb-5 fs-4 mq-link-header"><strong>MENU</strong></h2>
             <p class="mb-5">Browse our signature dishes and Omakase options, including fresh sashimi and unique rolls.</p>
             <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'menu' %}"><strong>VIEW MENU</strong></a>
         </div>
         <div class="col">
-            <h2 class="mb-5 fs-4 mq-index-mt"><strong>RESERVATIONS</strong></h2>
+            <h2 class="mb-5 fs-4 mq-index-mt mq-link-header"><strong>RESERVATIONS</strong></h2>
             <p class="mb-5">Reserve your unforgettable dining experience with exquisite sushi and exceptional service.</p>
             <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'reservation' %}"><strong>RESERVATIONS</strong></a>
         </div>
         <div class="col">
-            <h2 class="mb-5 fs-4 mq-index-mt"><strong>CONTACT</strong></h2>
+            <h2 class="mb-5 fs-4 mq-index-mt mq-link-header"><strong>CONTACT</strong></h2>
             <p class="mb-5">Contact us for questions, or assistance. Our team is here to help ensure a wonderful experience.</p>
             <a class="nav-link btn btn-light btn-lg text-dark" href="{% url 'contact' %}"><strong>CONTACT US</strong></a>
         </div>
