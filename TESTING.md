@@ -108,6 +108,20 @@ No errors were found when passing it through the validator
 
 ## Lighthouse Dev Tools
 I used the Lighthouse Dev Tools to assess the performance and accessibility of my website.
-![Lighthouse Dev Tool](/documentation/images)
+
+- The only not so good page was the About page due to image sizing.
+
+#### Home Page
+![Lighthouse Dev Tool](/documentation/images/lighthouse-dev-tools-landing-page.webp)
+#### Menu Page
+![Lighthouse Dev Tool](/documentation/images/lighthouse-dev-tools-menu-page.webp)
+#### Reservations Page
+![Lighthouse Dev Tool](/documentation/images/lighthouse-dev-tools-reservations-page.webp)
+#### About Page
+![Lighthouse Dev Tool](/documentation/images/lighthouse-dev-tools-about-page.webp)
+#### FAQ Page
+![Lighthouse Dev Tool](/documentation/images/lighthouse-dev-tools-faq-page.webp)
+#### Contact Page
+![Lighthouse Dev Tool](/documentation/images/lighthouse-dev-tools-contact-page.webp)
 
 [&lt; Back to README file](/README.md)
