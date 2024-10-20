@@ -276,7 +276,4 @@ Please refer to the [DEPLOYMENT.md](/DEPLOYMENT.md) for all deployment documenta
   - I used [Chrome Capture Extension](https://chromewebstore.google.com/detail/chrome-capture-gif-screen/ggaabchcecdbomdcnbahdfddfikjmphe) for all the documentation images in the TESTING.md file.
 
 ## To do list
-- Remove carousel after breakpoint, into gallery
-- change mobile size nav bar & landing page link spacing.
-- testing for user stories / manual testing
 - AUTOMATED / MANUAL TESTING
