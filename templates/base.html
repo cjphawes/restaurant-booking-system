@@ -25,12 +25,12 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand title-text-size jacques-francois-regular" href="{% url 'home' %}"><span class="jacques-francois-shadow-regular">K</span>UIDAORE</a>
+      <a class="title-text-size jacques-francois-regular ps-2 text-light text-decoration-none" href="{% url 'home' %}"><span class="jacques-francois-shadow-regular">K</span>UIDAORE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-end mq-navbar-container" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav fs-6">
           <a class="nav-link" href="{% url 'menu' %}">MENU</a>
           <a class="nav-link" href="{% url 'reservation' %}">RESERVATIONS</a>
@@ -38,9 +38,9 @@
           <a class="nav-link" href="{% url 'faq' %}">FAQ</a>
           <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
           {% if user.is_authenticated %}
-          <button type="button" class="btn px-2 d-flex justify-content-start" data-bs-toggle="modal" data-bs-target="#accountModal"><span class="bg-secondary text-dark rounded p-1 py-0"><strong>LOG OUT</strong></span></button>        
+          <button type="button" class="d-flex align-items-center justify-content-start px-1 my-auto me-auto rounded border-0 text-dark bg-secondary" data-bs-toggle="modal" data-bs-target="#accountModal"><span><strong>LOG OUT</strong></span></button>        
           {% else %}
-          <button type="button" class="btn px-2 d-flex justify-content-start " data-bs-toggle="modal" data-bs-target="#accountModal"><span class="bg-light p-1 rounded py-0"><strong>LOG IN</strong></span></button>        
+          <button type="button" class="d-flex align-items-center justify-content-start px-1 my-auto me-auto rounded border-0 bg-light" data-bs-toggle="modal" data-bs-target="#accountModal"><span><strong>LOG IN</strong></span></button>        
           {% endif %}
         </div>
       </div>
@@ -96,11 +96,10 @@
   
   <footer class="flex-display navbar-text-size">    
     <h3 class="jacques-francois-regular"><span class="jacques-francois-shadow-regular">K</span>UIDAORE</h3>
-    <p class="margin-top jacques-francois-regular">&copy; 2024 kuidaore, all rights reserved</p>
+    <p class="margin-top jacques-francois-regular text-center">&copy; 2024 kuidaore, all rights reserved</p>
   </footer>
     <!-- Bootstrap 5 JS Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="{% static 'js/alerts.js' %}"></script>
-    <script src="{% static 'js/authentication.js' %}"></script>
 </body>
 </html>
