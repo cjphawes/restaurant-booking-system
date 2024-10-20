@@ -9,6 +9,7 @@
     - The removal of links in the footer.
     - The newsletter hasn't been implemented yet.
     - The navigation bar in the mobile view isn't overlaid but a dropdown instead.
+    - The authenticated views used to be the original but now they require you to log in first to see such views.
 
 ## Web Wireframes
 
