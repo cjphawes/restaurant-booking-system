@@ -18,7 +18,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "8000-cjphawes-restaurantbook-1qwx7mg5tv9.ws.codeinstitute-ide.net", "8000-cjphawes-restaurantbook-j9vwrsy0v9t.ws-eu116.gitpod.io",
@@ -90,7 +90,8 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net/",
-    "https://*.herokuapp.com"
+    "https://*.herokuapp.com",
+    "https://*.gitpod.io/"
 ]
 
 # Password validation
