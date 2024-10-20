@@ -6,7 +6,7 @@
 {% block content %}
 <div class="d-flex justify-content-center align-items-center">
     <h2 class="text-center fs-4 my-5 text-decoration-underline">Your Reservations</h2>
-    <a class="btn btn-sm text-secondary border-secondary border-3 position-absolute start-0 ms-5 mt-3" href="{% url 'reservation' %}"><strong>Go Back</strong></a>
+    <a class="btn btn-sm text-secondary border-secondary border-3 position-absolute start-0 ms-5 mt-3 back-btn-view-res" href="{% url 'reservation' %}"><strong>Go Back</strong></a>
 </div>
 {% for reservation in reservations %}
 <div class="d-flex justify-content-center align-items-center mt-4 mq-view-reservation-container">
