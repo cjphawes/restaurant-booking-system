@@ -240,7 +240,19 @@ footer {
         margin-top: 5rem;
     }
     .mq-reservation-links {
-        width: 50% !important;
+        width: 70% !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mq-delete-reservation-icon {
+        display: none !important;
+    }
+    .mq-delete-reservation-width {
+        width: 90% !important;
+    }
+    .title-logo {
+        font-size: 0.1em;
     }
 }
 
@@ -274,13 +286,32 @@ footer {
     .mq-contact-text-width {
         margin: 0 2rem 0 2rem;
     }
+    .back-btn-view-res {
+        margin: 0px !important;
+        position: relative !important;
+        left: 1rem !important;
+        font-size: .7em;
+    }
 }
 
-@media screen and (max-width: 1000px) {
-    .mq-delete-reservation-icon {
-        display: none !important;
+
+@media screen and (max-width: 430px) {
+    .title-text-size {
+        font-size: 1rem !important;
     }
-    .mq-delete-reservation-width {
-        width: 90% !important;
+    .mq-res-auth-container {
+        flex-direction: column;
+        gap: 1rem;
+        align-self: center;
+        width: 90%;
+    }
+    .mq-res-auth-link-reg {
+        margin-right: 0rem !important;
+    }
+    .mq-res-auth-link-log {
+        margin-left: 0rem !important;
+    }
+    .remove-element {
+        display: none !important;
     }
 }
