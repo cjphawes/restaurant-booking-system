@@ -96,15 +96,15 @@ No errors were found when passing it through the validator
 
 | ID No. | Action | Requirements Met | Evidence |
 |--------|--------|------------------|----------|
-| **1** | As a user I can reserve a time slot and  dictate the number of guests I would like attending so that I can visit this restaurant with a certain number of friends | Y | ![Making a reservation](/documentation/gifs/making-a-reservation.gif) |
-| **2** | As a user I can navigate the website easily so that I am able to find all the necessary requirements I need to create a reservation or leave a review | Y | ![Navigating the website](/documentation/gifs/navigating-website-easily.gif) |
-| **3** | As a user I can send a cancellation for a reservation so that my reservations are always up to date with the correct information | Y | ![Cancel a reservation](/documentation/gifs/cancel-user-reservation.gif) |
-| **4** | As a user I can get answers to any questions or queries I may have so that I can make an informed decision whether or not I want to visit the restaurant | Y | ![View FAQs](/documentation/gifs/view-faqs.gif) |
-| **5** | As a user I can register an account with the restaurant so that my details are saved for ease of reservations the next time I intend to visit | Y | ![Create an account](/documentation/gifs/create-an-account.gif) |
-| **6** | As a user I can change the preferred language of the website so that I am able to go through the website and understand it in my own language | N | **Implemented in Future Feature** |
-| **7** | As a user I can view the menu before attending so that I can decide what food I would like to eat | Y | ![View Menu Page](/documentation/gifs/viewing-menu-page.gif) |
-| **8** | As a user I can review and send a feedback form to the restaurant so that I can provide constructive criticism to improve their website or restaurant | Partially Completed | ![Leaving a review](/documentation/gifs/leaving-a-review.gif) |
-| **9** | As a user I can sign-up to the restaurants newsletter so that I can receive information about promotions or any news/events | N | **Implemented in Future Feature** |
+| **1** | Given the user is logged in, when I click on "Make a reservation", then the user can reserve a time slot and dictate the number of guests they would like attending | Y | ![Making a reservation](/documentation/gifs/making-a-reservation.gif) |
+| **2** | Given the user finds it difficult to find information, when viewing the navigation bar and links, then the user can click on all the pertinent links needed to create a reservation and/or submit a review | Y | ![Navigating the website](/documentation/gifs/navigating-website-easily.gif) |
+| **3** | Given the user is viewing their reservations, when I click on "Cancel a reservation", then the page will change to a confirmation page to cancel the reservation | Y | ![Cancel a reservation](/documentation/gifs/cancel-user-reservation.gif) |
+| **4** | Given the user has questions, when opening the FAQ page, then the user can view individual questions for the answers the user needs | Y | ![View FAQs](/documentation/gifs/view-faqs.gif) |
+| **5** | Given the user wants to register an account, when clicking on the "Log in" button, then the user will be shown a link to register which will take them to the register page | Y | ![Create an account](/documentation/gifs/create-an-account.gif) |
+| **6** | Given the user speaks a different language, when the user clicks on the world icon, then the option to change to the users preferred language will appear | N | **Implemented in Future Feature** |
+| **7** | Given the user wants to look through the menu, when clicking on the "Menu" button on the navigation bar, then the user will be able see what is on the menu | Y | ![View Menu Page](/documentation/gifs/viewing-menu-page.gif) |
+| **8** | Given the user wants to leave a review, when clicking on the "Leave a review" button on the contact page, then the user goes to a review form page to submit a review | Partially Completed | ![Leaving a review](/documentation/gifs/leaving-a-review.gif) |
+| **9** | Given the user wants to sign-up to the restaurants newsletter, when entering their details and clicking "Submit", then the user will receive email updates about news and offers/events available | N | **Implemented in Future Feature** |
 
 ## Lighthouse Dev Tools
 I used the Lighthouse Dev Tools to assess the performance and accessibility of my website.
