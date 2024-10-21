@@ -1,0 +1,22 @@
+{
+  "name": "restaurant-booking-system",
+  "version": "1.0.0",
+  "description": "![Banner of the logo](/documentation/images/banner-of-website.webp)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjphawes/restaurant-booking-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjphawes/restaurant-booking-system/issues"
+  },
+  "homepage": "https://github.com/cjphawes/restaurant-booking-system#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
