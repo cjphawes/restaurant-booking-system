@@ -60,7 +60,7 @@ No errors were found when passing it through the validator.
 No errors were found when passing it through the validator
 ![JSHint Validation Image](/documentation/images/jshint-validation.webp)
 
-## Manual Testing
+## Manual Testing (BDD)
 
 - Be aware! On some of the evidence below, when using the modal, the screen capture doesn't show the modal elements showing.
 
@@ -105,6 +105,9 @@ No errors were found when passing it through the validator
 | **7** | Given the user wants to look through the menu, when clicking on the "Menu" button on the navigation bar, then the user will be able see what is on the menu | Y | ![View Menu Page](/documentation/gifs/viewing-menu-page.gif) |
 | **8** | Given the user wants to leave a review, when clicking on the "Leave a review" button on the contact page, then the user goes to a review form page to submit a review | Partially Completed | ![Leaving a review](/documentation/gifs/contact-page-review-btn.gif) |
 | **9** | Given the user wants to sign-up to the restaurants newsletter, when entering their details and clicking "Submit", then the user will receive email updates about news and offers/events available | N | **Implemented in Future Feature** |
+
+## Manual Testing (TDD)
+
 
 ## Lighthouse Dev Tools
 I used the Lighthouse Dev Tools to assess the performance and accessibility of my website.
