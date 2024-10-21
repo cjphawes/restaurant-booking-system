@@ -17,6 +17,27 @@
   },
   "homepage": "https://github.com/cjphawes/restaurant-booking-system#readme",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@testing-library/jest-dom": "^6.6.2",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "jestTestEnv": {
+    "testEnvironment": "jsdom"
+  },
+  "jestSetupFiles": {
+    "setupFilesAfterEnv": [
+      "restaurant-booking-system/setupTests.js"
+    ]
+  },
+  "jestBabel": {
+    "setupFilesAfterEnvForBabel": [
+      "restaurant-booking-system/setupTests.js"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
   }
 }
