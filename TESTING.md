@@ -106,8 +106,13 @@ No errors were found when passing it through the validator
 | **8** | Given the user wants to leave a review, when clicking on the "Leave a review" button on the contact page, then the user goes to a review form page to submit a review | Partially Completed | ![Leaving a review](/documentation/gifs/contact-page-review-btn.gif) |
 | **9** | Given the user wants to sign-up to the restaurants newsletter, when entering their details and clicking "Submit", then the user will receive email updates about news and offers/events available | N | **Implemented in Future Feature** |
 
-## Manual Testing (TDD)
+## Automated Testing (TDD)
+Using Jest for my JS function, it passed both of my tests!
 
+1. I ran one test to see if the element faded after 3 seconds.
+2. I ran another test to check that when there is noi alert present it handles correctly.
+
+- However, when testing my function for fading out the alert messages, I found only 50% of the branch was being covered, and was unable to make it more than that.
 
 ## Lighthouse Dev Tools
 I used the Lighthouse Dev Tools to assess the performance and accessibility of my website.
