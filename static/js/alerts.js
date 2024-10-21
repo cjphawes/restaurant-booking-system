@@ -1,6 +1,5 @@
-window.onload = function() {
+function fading_alert() {
     let alerts = document.querySelectorAll('.alert');
-
     if (alerts) {
         alerts.forEach(alert => {
             setTimeout(function() {
@@ -13,3 +12,5 @@ window.onload = function() {
         });
     }
 };
+
+module.exports = fading_alert;
