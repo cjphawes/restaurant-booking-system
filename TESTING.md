@@ -15,7 +15,7 @@ I used the Code Institute Python Linter to ensure sure the source code throughou
 ![PEP8 Validation 2](/documentation/images/pep8-validation-2.webp)
 
 ### HTML Validation
-The errors that were commonly thrown were:
+The were only a few errors, none however, that caused the functionality of the code to stop. The few errors that were commonly thrown were:
 -   Any Django html template tags
 -   Top level elements not being present such as `head`, `lang=en`, `!DOCTYPE html` & `title`, but this was due to me using Django html templates.
 -   On `update_reservation.html`, the code is as shown:
@@ -100,16 +100,15 @@ No errors were found when passing it through the validator
 | **2** | Given the user finds it difficult to find information, when viewing the navigation bar and links, then the user can click on all the pertinent links needed to create a reservation and/or submit a review | Y | ![Navigating the website](/documentation/gifs/navigating-website-easily.gif) |
 | **3** | Given the user is viewing their reservations, when I click on "Cancel a reservation", then the page will change to a confirmation page to cancel the reservation | Y | ![Cancel a reservation](/documentation/gifs/cancel-user-reservation.gif) |
 | **4** | Given the user has questions, when opening the FAQ page, then the user can view individual questions for the answers the user needs | Y | ![View FAQs](/documentation/gifs/view-faqs.gif) |
-| **5** | Given the user wants to register an account, when clicking on the "Log in" button, then the user will be shown a link to register which will take them to the register page | Y | ![Create an account](/documentation/gifs/create-an-account.gif) |
+| **5** | Given the user wants to register an account, when clicking on the "Log in" button, then the user will be shown a link to register which will take them to the register page | Y | ![Create an account](/documentation/gifs/navigate-to-register-page.gif) |
 | **6** | Given the user speaks a different language, when the user clicks on the world icon, then the option to change to the users preferred language will appear | N | **Implemented in Future Feature** |
 | **7** | Given the user wants to look through the menu, when clicking on the "Menu" button on the navigation bar, then the user will be able see what is on the menu | Y | ![View Menu Page](/documentation/gifs/viewing-menu-page.gif) |
-| **8** | Given the user wants to leave a review, when clicking on the "Leave a review" button on the contact page, then the user goes to a review form page to submit a review | Partially Completed | ![Leaving a review](/documentation/gifs/leaving-a-review.gif) |
+| **8** | Given the user wants to leave a review, when clicking on the "Leave a review" button on the contact page, then the user goes to a review form page to submit a review | Partially Completed | ![Leaving a review](/documentation/gifs/contact-page-review-btn.gif) |
 | **9** | Given the user wants to sign-up to the restaurants newsletter, when entering their details and clicking "Submit", then the user will receive email updates about news and offers/events available | N | **Implemented in Future Feature** |
 
 ## Lighthouse Dev Tools
 I used the Lighthouse Dev Tools to assess the performance and accessibility of my website.
 
-- The only not so good page was the About page due to image sizing.
 
 #### Home Page
 ![Lighthouse Dev Tool](/documentation/images/lighthouse-dev-tools-landing-page.webp)
@@ -119,6 +118,9 @@ I used the Lighthouse Dev Tools to assess the performance and accessibility of m
 ![Lighthouse Dev Tool](/documentation/images/lighthouse-dev-tools-reservations-page.webp)
 #### About Page
 ![Lighthouse Dev Tool](/documentation/images/lighthouse-dev-tools-about-page.webp)
+
+- The performance level decreased due to the About page image sizing.
+
 #### FAQ Page
 ![Lighthouse Dev Tool](/documentation/images/lighthouse-dev-tools-faq-page.webp)
 #### Contact Page
