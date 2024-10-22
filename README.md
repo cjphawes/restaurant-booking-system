@@ -274,6 +274,3 @@ Please refer to the [DEPLOYMENT.md](/DEPLOYMENT.md) for all deployment documenta
   - I used [ImageResizer](https://imageresizer.com/) for all the README.md, DEPLOYMENT.md, ERDDIAGRAM.md, WIREFRAMES.md and TESTING.md file images.
   - I used [Unsplash](https://unsplash.com/) for all the images used in the website.
   - I used [Chrome Capture Extension](https://chromewebstore.google.com/detail/chrome-capture-gif-screen/ggaabchcecdbomdcnbahdfddfikjmphe) for all the documentation images in the TESTING.md file.
-
-## To do list
-- AUTOMATED / MANUAL TESTING
