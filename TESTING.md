@@ -107,16 +107,32 @@ No errors were found when passing it through the validator
 | **9** | Given the user wants to sign-up to the restaurants newsletter, when entering their details and clicking "Submit", then the user will receive email updates about news and offers/events available | N | **Implemented in Future Feature** |
 
 ## Automated Testing (TDD)
-Using Jest for my JS function, it passed both of my tests!
+
+### Jest
+Using Jest for my JS function, it passed both of my tests! To do this I used Jest matchers to advance the time simulating the 3 seconds I specified.
 
 1. I ran one test to see if the element faded after 3 seconds.
-2. I ran another test to check that when there is noi alert present it handles correctly.
+2. I ran another test to check that when there is no alert present it handles correctly.
 
 - However, when testing my function for fading out the alert messages, I found only 50% of the branch was being covered, and was unable to make it more than that.
 
+### Python
+Using the built in Python testing functions, I added tests to the views.py file of the reservations app, where all of the key functionality of the website resides.
+
+I created 4 tests, one for each view, each one testing what the view output should be:
+- 3/4 tests passed with 1 throwing an error due to redirection, I could not fix this. I believe it is due to the login credentials, the function test is below.
+
+```
+    # Testing for the correct status code and user
+    def test_list_reservations(self):
+        self.client.login(username="testusername", password="123456789")
+        response = self.client.get(reverse('reservationDetails'))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, 'Joe Bloggs')
+```
+
 ## Lighthouse Dev Tools
 I used the Lighthouse Dev Tools to assess the performance and accessibility of my website.
-
 
 #### Home Page
 ![Lighthouse Dev Tool](/documentation/images/lighthouse-dev-tools-landing-page.webp)
